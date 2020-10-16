@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irodalmi összehasonlítás | statikus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <H1>Irodalmi összehasonlítás</H1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html" class="nav-fooldal">Főoldal</a>
+        <a href="index.html" class="active">Statikus</a>
+        <a href="dinamikus.php">Dinamikus</a>
+        <a href="#">Tetszőleges</a>
+    </div>
+    <div class="row">
+        <div class="footer">
+            <div class="footerImpressum">
+                <p>Gárdonyi Géza - Egri Csillagok <br>és<br>Kertész Imre - Sorstalanság<br>összehasonlítása<br>első tíz
+                    közös szó alapján</p>
+            </div>
+        </div>
+            <div class="side">
+                <div class="wrapper">
+                    <div class="container d-flex flex-column justify-content-center align-items-center">
+                        <div class="title text-center mb-5">
+                            <p>Egri csillagok legtöbbet használt szavak:
+                            <p>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <!---->
+                <div class="wrapper">
+                    <div class="container d-flex flex-column justify-content-center align-items-center">
+                        <div class="title text-center mb-5">
+                            <p>Sorstalanság legtöbbet használt szavak:
+                            <p>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <!---->
+            </div>
+
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+            <script src="./js/chart1.js"></script>
+            <script src="./js/chart2.js"></script>
+
+            <div class="footer">
+                <div class="footerImpressum">
+                    <h2>ProjekMunka5</h2>
+                    <h4>készítette:</h4>
+                    <h5>Ádom Bence</h5>
+                </div>
+            </div>
+</body>
+
+</html>

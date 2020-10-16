@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2dij2013</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        var arr1 = [];
+        var arr2 = [];
+        var mu1szo = [];
+        var mu1elo = [];
+        var mu2szo = [];
+        var mu2elo = [];
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <H1>Irodalmi összehasonlítás</H1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html" class="nav-fooldal">Főoldal</a>
+        <a href="index.html">Statikus</a>
+        <a href="dinamikus.php">Dinamikus</a>
+        <a href="#" class="active">Tetszőleges</a>
+    </div>
+    <div class="row">
+        <div class="footer">
+            <div class="footerImpressum">
+                <p>Gárdonyi Géza - Egri Csillagok <br>és<br>Kertész Imre - Sorstalanság<br>összehasonlítása<br>első tíz
+                    közös szó alapján</p>
+            </div>
+        </div>
+        <div class="side">
+            <div class="wrapper">
+                <div class="container d-flex flex-column justify-content-center align-items-center">
+                    <div class="title text-center mb-5">
+                        <p id="title1">első mű</p> <input type="text" id="myText1">
+                        <button onclick="clicked()">ok</button>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="myChart1"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <!---->
+            <div class="wrapper">
+                <div class="container d-flex flex-column justify-content-center align-items-center">
+                    <div class="title text-center mb-5">
+                        <p id="title2">második mű</p> <input type="text" id="myText2">
+                        <button onclick="clicked2()">ok</button>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <!---->
+        </div>
+
+
+        <script src="js/teszt3.js"></script>
+        <!--<script src="./js/jsAteszt2htmlhez.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+        <script src="./js/chart1Custom.js"></script>
+        <script src="./js/chart2Custom.js"></script>-->
+
+        <div class="footer">
+            <div class="footerImpressum">
+                <h2>ProjekMunka5</h2>
+                <h4>készítette:</h4>
+                <h5>Ádom Bence</h5>
+                <h5>Balogh Gábor</h5>
+                <h5>Maknyik Márk</h5>
+            </div>
+        </div>
+</body>
+
+</html>

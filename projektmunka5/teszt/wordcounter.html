@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+
+</head>
+
+<body>
+    <p>első mű</p> <input type="text" id="myText">
+
+
+    <button onclick="clicked()">Try it</button>
+
+    <p>második mű</p> <input type="text" id="myText2">
+
+
+    <button onclick="clicked2()">Try it</button>
+    <p id="demo"></p>
+
+    <script>
+
+        function clicked() {
+            var x = document.getElementById("myText").value;
+            var teszt = x;
+            //console.log("teszt értéke formázás előtt:" + teszt);
+            teszt = teszt.replaceAll(",", "");
+            teszt = teszt.replaceAll(";", "");
+            teszt = teszt.replaceAll("?", "");
+            teszt = teszt.replaceAll("!", "");
+            teszt = teszt.replaceAll(".", "");
+            teszt = teszt.replaceAll("-", "");
+            teszt = teszt.replaceAll("–", "");
+            teszt = teszt.replaceAll('"', '');
+            teszt = teszt.replaceAll("'", "");
+            teszt = teszt.replaceAll(":", "");
+            teszt = teszt.replaceAll("(", "");
+            teszt = teszt.replaceAll(")", "");
+            teszt = teszt.replaceAll("[", "");
+            teszt = teszt.replaceAll("]", "");
+            teszt = teszt.replaceAll("/", "");
+            teszt = teszt.toLowerCase();
+
+            //console.log("teszt értéke: " + teszt);
+            //var outPut2 = countWords(teszt);
+            var wordsArray = splitByWords(teszt);
+            //wordsArray = Selector(wordsArray);
+            //console.log(wordsArray);
+            for (var i = 0; i < wordsArray.length; i++) {
+                wordsArray[i] = Selector(wordsArray[i]);
+            }
+            var wordsMap = createWordMap(wordsArray);
+            //console.log(wordsMap);
+            var finalWordsArray = sortByCount(wordsMap);
+            console.log("finalwordsarray: ")
+            console.log(finalWordsArray);
+            console.log('The word "' + finalWordsArray[0].name + '" appears the most in the file ' +
+                finalWordsArray[0].total + ' times');
+        }
+
+        function clicked2() {
+            var x = document.getElementById("myText2").value;
+
+            var teszt1 = x;
+            //console.log("teszt értéke formázás előtt:" + teszt);
+            teszt1 = teszt1.replaceAll(",", "");
+            teszt1 = teszt1.replaceAll(";", "");
+            teszt1 = teszt1.replaceAll("?", "");
+            teszt1 = teszt1.replaceAll("!", "");
+            teszt1 = teszt1.replaceAll(".", "");
+            teszt1 = teszt1.replaceAll("-", "");
+            teszt1 = teszt1.replaceAll("–", "");
+            teszt1 = teszt1.replaceAll('"', '');
+            teszt1 = teszt1.replaceAll("'", "");
+            teszt1 = teszt1.replaceAll(":", "");
+            teszt1 = teszt1.replaceAll("(", "");
+            teszt1 = teszt1.replaceAll(")", "");
+            teszt1 = teszt1.replaceAll("[", "");
+            teszt1 = teszt1.replaceAll("]", "");
+            teszt1 = teszt1.replaceAll("/", "");
+            teszt1 = teszt1.toLowerCase();
+
+            
+            var wordsArray = splitByWords(teszt1);
+            for (var i = 0; i < wordsArray.length; i++) {
+                wordsArray[i] = Selector(wordsArray[i]);
+            }
+            var wordsMap = createWordMap(wordsArray);
+            //console.log(wordsMap);
+            var finalWordsArray2 = sortByCount(wordsMap);
+            console.log("finalwordsarray: ")
+            console.log(finalWordsArray2);
+            console.log('The word "' + finalWordsArray2[0].name + '" appears the most in the file ' +
+                finalWordsArray2[0].total + ' times');
+            //console.log("top 10 szó:");
+            /*for (var i = 0; i < 100; i++) {
+                console.log(finalWordsArray2[i]);
+            }*/
+
+        }
+
+        kotoSzavak = ["avagy", "avagy-avagy", "és", "illetve", "vagy", "vagy-vagy", "azért", "azonban", "ám",
+            "csakhogy", "de",
+            "ellenben", "hanem", "maga", "mégis", "mégsem", "míg", "mindamellett", "pedig", "viszont", "aztán",
+            "aztán pedig",
+            "is", "meg", "még", "mind mind", "se", "sem", "sőt", "szintén", "addig hogy", "addig míg", "akkor",
+            "akkora hogy", "mint",
+            "annak okáért", "annyi hogy", "annyira hogy", "ekképpen", "ennek folytán", "ennélfogva", "eszerint",
+            "hát",
+            "így", "így tehát", "következésképpen", "tehát", "úgy", "úgyhogy", "azaz", "tudniillik", "ugyanis",
+            "vagyis", "akár",
+            "azért hogy", "ámbár", "ámde", "bár", "ha", "ha - is", "ha egyszer", "habár", "hiába", "holott",
+            "holott pedig",
+            "igaz hogy", "jóllehet", "még ha", "mikor", "noha", "ugyan", "hogy", "abban hogy", "ahelyett hogy",
+            "amellett hogy", "anélkül hogy", "azon hogy", "azonkívül hogy", "azzal hogy", "arra hogy",
+            "avégett hogy",
+            "avégre hogy", "nehogy", "abból hogy", "arról hogy", "a", "azt", "az", "ez", "s", "egy"
+        ];
+
+
+        function Selector(word) {
+            var seged = null;
+            var ret = false;
+            for (let i = 0; i < kotoSzavak.length; i++) {
+                seged = kotoSzavak[i];
+                if (word == seged) {
+                    ret = true;
+                }
+            }
+            if (ret == true) {
+                word = "asd";
+                return word;
+            } else {
+                return word;
+            }
+        }
+
+        function splitByWords(text) {
+            //split
+            var wordsArray = text.split(/\s+/);
+            return wordsArray;
+        }
+
+        function createWordMap(wordsArray) {
+
+            // create map
+            var wordsMap = {};
+            wordsArray.forEach(function (key) {
+                if (wordsMap.hasOwnProperty(key)) {
+                    wordsMap[key]++;
+                } else {
+                    wordsMap[key] = 1;
+                }
+            });
+
+            return wordsMap;
+
+        }
+
+        function sortByCount(wordsMap) {
+
+            // sort by count in descending order
+            var finalWordsArray = [];
+            finalWordsArray = Object.keys(wordsMap).map(function (key) {
+                return {
+                    name: key,
+                    total: wordsMap[key]
+                };
+            });
+
+            finalWordsArray.sort(function (a, b) {
+                return b.total - a.total;
+            });
+
+            return finalWordsArray;
+
+        }
+    </script>
+</body>
+
+</html>
