@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* body stilus elemek*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 30px;
+}
+
+
+/* Header stilus elemek */
+.header {
+    padding: 100px;
+    text-align: center;
+    background-color: violet;
+    background-image: url(../pictures/főoldal.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+
+/* h1 betűméret*/
+.header h1 {
+    font-size: 40px;
+}
+
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+
+/* navbar linkek */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* szín megváltoztatása, ha rá mutat a kurzor */
+.navbar a:hover {
+    background-color: #144E6C;
+    color: white;
+}
+
+
+/* jelenlegi oldal megkülönböztetése a navbáron*/
+.navbar a.active {
+    background-color: #b06760;
+    color: white;
+}
+
+/* Column konténer*/
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/* side stílus elemek*/
+.side {
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    /*font-size: 30px;*/
+}
+
+/* Main stílus elemek*/
+.main {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* table */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/*páros sorok*/
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+@media screen and (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+
+    .body {
+        padding-top: 0px !important;
+    }
+    .navbar {
+        position: initial !important;
+    }
+}
+
+
+/*Responsive layout - 700px*/
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+    .navbar {
+        position: relative !important;
+    }
+}
+
+/*Responsive layout - 400px*/
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+    .navbar {
+        position: relative !important;
+    }
+}
+
+/*gombok stílus elemei*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+a {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
