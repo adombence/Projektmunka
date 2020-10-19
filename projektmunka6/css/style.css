@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto Mono");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+}
+
+
+/* body stilus elemek*/
+body {
+    flex: 100%;
+    margin: 0;
+    font-size: 30px;
+}
+
+
+/* Header stilus elemek */
+.header {
+    padding: 100px;
+    text-align: center;
+    background-color: violet;
+    background-image: url(../pictures/főoldal.jpg);
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+
+
+
+/* h1 betűméret*/
+.header h {
+    font-size: 40px;
+    font-family: 'Roboto Mono';
+}
+
+.header h span {
+    background-color: black;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+
+/* navbar linkek */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* szín megváltoztatása, ha rá mutat a kurzor */
+.navbar a:hover {
+    background-color: #8E8E8E;
+    color: white;
+}
+
+
+/* jelenlegi oldal megkülönböztetése a navbáron*/
+.navbar a.active {
+    background-color: #FF867F;
+    color: white;
+}
+
+/* Column konténer*/
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: #ddd;
+}
+
+/* side stílus elemek*/
+.side {
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Main stílus elemek*/
+.main {
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    height: fit-content;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Column konténer*/
+.kisrow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+/* kisside stílus elemek*/
+.kisside {
+    flex: 40%;
+    background-color: #FF867F;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* kisMain stílus elemek*/
+.kismain {
+    flex: 40%;
+    background-color: #FF867F;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    height: fit-content;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+span {
+    background-color: black;
+}
+
+.ujszerzo {
+    background-color: #FF867F;
+}
+
+
+.kitolto {
+    height: 385px;
+}
+
+.segitseg {
+    font-size: small;
+}
+
+.title {
+    text-align: center;
+}
+
+div.rejtett {
+    display: none;
+}
+
+.kesz {
+    width: 100%;
+    background-color: #FF867F;
+    color: 61616;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.kesz:hover{
+    background-color: #FF5252;
+}
+
+input[type=text],
+select {
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #FF867F;
+    color: 61616;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FF5252;
+}
+
+
+.tab {
+    flex: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/* Footer */
+.footer {
+    flex: 100%;
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* table */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/*páros sorok*/
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+@media screen and (max-width: 900px) {
+    .row {
+        flex-direction: column;
+        font-size: small;
+    }
+
+
+
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+
+    .body {
+        padding-top: 0px !important;
+        width: 100%;
+    }
+
+    .navbar {
+        position: initial !important;
+    }
+
+
+    .main {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .side {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .tab {
+        width: 100%;
+        font-size: medium;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .navbar {
+        position: relative !important;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
+
+
+/*Responsive layout - 700px*/
+@media screen and (max-width: 700px) {
+    .body {
+        padding-top: 0px !important;
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .side {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .tab {
+        width: 100%;
+        font-size: x-small;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .navbar {
+        position: relative !important;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
+
+/*Responsive layout - 400px*/
+@media screen and (max-width: 400px) {
+    .body {
+        padding-top: 0px !important;
+        width: 100%;
+    }
+
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .side {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .tab {
+        width: 100%;
+        font-size: small;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .navbar {
+        position: relative !important;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
+
+/*gombok stílus elemei*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+a {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.container {
+    height: 100vh;
+}
+
+.chart-wrapper {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}
