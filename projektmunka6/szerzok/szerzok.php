@@ -1,23 +1,19 @@
-<?php
-include('php/connect.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Könyvek</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Szerzők</title>
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
     <!--Navigációs bár-->
     <div class="navbar">
-        <a href="../index.html" class="active">Könyvek</a>
-        <a href="szerzok/szerzok.php">Szerzők</a>
+        <a href="../index.php">Könyvek</a>
+        <a href="szerzok.php" class="active">Szerzők</a>
         <a href="ujadat.php">Új könyv/szerző</a>
     </div>
     <!--Az oldal maga-->
@@ -26,11 +22,11 @@ include('php/connect.php');
         <div class="main">
             <!--szerzok-->
             <div class="title">
-                <h1>Könyvek</h1>
+                <h1>Szerzők</h1>
             </div>
             <div class="form-group">
                 <div class="input-group">
-                    <input type="text" name="search_text" id="search_text" placeholder="Keresés a könyvek között" class="form-control" />
+                    <input type="text" name="search_text" id="search_text" placeholder="Keresés a szerzők között" class="form-control" />
                 </div>
             </div>
             <br />
@@ -67,7 +63,6 @@ include('php/connect.php');
             });
         });
     </script>
-
     <!--footer-->
     <div class="footer">
         <div class="footerImpressum">

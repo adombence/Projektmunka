@@ -8,7 +8,7 @@
 
 /* body stilus elemek*/
 body {
-    flex: 100%;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     font-size: 30px;
 }
@@ -20,7 +20,7 @@ body {
     text-align: center;
     background-color: violet;
     background-image: url(../pictures/főoldal.jpg);
-    height: 250px;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,18 +29,9 @@ body {
 
 
 
-
-
 /* h1 betűméret*/
-.header h {
+.header h1 {
     font-size: 40px;
-    font-family: 'Roboto Mono';
-}
-
-.header h span {
-    background-color: black;
-    padding-left: 2%;
-    padding-right: 2%;
 }
 
 
@@ -64,9 +55,20 @@ body {
     text-decoration: none;
 }
 
+.form-control {
+    background-image: url('pictures/search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+
 /* szín megváltoztatása, ha rá mutat a kurzor */
 .navbar a:hover {
-    background-color: #8E8E8E;
+    background-color: #FF5252;
     color: white;
 }
 
@@ -83,11 +85,82 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    background-color: #ddd;
 }
 
 /* side stílus elemek*/
 .side {
+    -ms-flex: 20%;
+    /* IE10 */
+    flex: 10%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    /*font-size: 30px;*/
+}
+
+/* Main stílus elemek*/
+.main {
+    -ms-flex: 90%;
+    /* IE10 */
+    flex: 90%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+.index_button {
+    width: 100%;
+    background-color: #FF867F;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.index_button:hover {
+    background-color: #FF5252;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* table */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/*páros sorok*/
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+/* Column konténer*/
+.Rrow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: #ddd;
+}
+
+/* side stílus elemek*/
+.Rside {
     flex: 40%;
     background-color: white;
     padding: 20px;
@@ -101,7 +174,7 @@ body {
 }
 
 /* Main stílus elemek*/
-.main {
+.Rmain {
     flex: 40%;
     background-color: white;
     padding: 20px;
@@ -114,6 +187,7 @@ body {
     text-align: center;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 
 /* Column konténer*/
 .kisrow {
@@ -189,7 +263,7 @@ div.rejtett {
     cursor: pointer;
 }
 
-.kesz:hover{
+.kesz:hover {
     background-color: #FF5252;
 }
 
@@ -245,41 +319,28 @@ input[type=submit]:hover {
 }
 
 
-/* Footer */
-.footer {
-    flex: 100%;
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-}
-
-/* table */
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td,
-th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-/*páros sorok*/
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
 
 @media screen and (max-width: 900px) {
-    .row {
+    .Rrow {
         flex-direction: column;
         font-size: small;
     }
 
+    .Rmain {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 
+    .Rside {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .row {
+        flex-direction: column;
+    }
 
     .navbar a {
         float: none;
@@ -288,123 +349,68 @@ tr:nth-child(even) {
 
     .body {
         padding-top: 0px !important;
-        width: 100%;
     }
 
     .navbar {
         position: initial !important;
-    }
-
-
-    .main {
-        width: 100%;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .side {
-        width: 100%;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .tab {
-        width: 100%;
-        font-size: medium;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .navbar {
-        position: relative !important;
-    }
-
-    .footer {
-        width: 100%;
     }
 }
 
 
 /*Responsive layout - 700px*/
 @media screen and (max-width: 700px) {
-    .body {
-        padding-top: 0px !important;
-        width: 100%;
-    }
-
     .row {
         flex-direction: column;
-    }
-
-    .main {
-        width: 100%;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .side {
-        width: 100%;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .tab {
-        width: 100%;
-        font-size: x-small;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
     }
 
     .navbar {
         position: relative !important;
     }
 
-    .footer {
+    .Rrow {
+        flex-direction: column;
+        font-size: small;
+    }
+
+    .Rmain {
         width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .Rside {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
 
 /*Responsive layout - 400px*/
 @media screen and (max-width: 400px) {
-    .body {
-        padding-top: 0px !important;
-        width: 100%;
-    }
-
     .navbar a {
         float: none;
         width: 100%;
-    }
-
-    .row {
-        flex-direction: column;
-    }
-
-    .main {
-        width: 100%;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .side {
-        width: 100%;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .tab {
-        width: 100%;
-        font-size: small;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
     }
 
     .navbar {
         position: relative !important;
     }
 
-    .footer {
+    .Rrow {
+        flex-direction: column;
+        font-size: small;
+    }
+
+    .Rmain {
         width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .Rside {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
 
@@ -460,18 +466,4 @@ a:active {
 
 a:visited {
     color: white;
-}
-
-.container {
-    height: 100vh;
-}
-
-.chart-wrapper {
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
-}
-
-.title {
-    text-align: center;
 }
