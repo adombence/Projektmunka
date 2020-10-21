@@ -305,7 +305,20 @@ input[type=submit]:hover {
     background-color: #FF5252;
 }
 
+.hidden_button {
+    width: 100%;
+    background-color: #FF867F;
+    color: 61616;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+.hidden_button:hover {
+    background-color: #FF5252;
+}
 .tab {
     flex: 100%;
     background-color: white;

@@ -57,7 +57,7 @@ $result2 = $conn->query($sql2);
                         ?>
                         <option value="Új szerző megadása" class="ujszerzo">Új szerző megadása</option>
                     </select>
-                    <button onclick="szerzoid()" id="hidden_button" class="hidden_button">kész</button>
+                    <button onclick="szerzoid()" id="hidden_button" class="kesz">kész</button>
                 </div>
 
 

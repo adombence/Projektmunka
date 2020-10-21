@@ -23,7 +23,7 @@ $result2 = $conn->query($sql2);
 
 <body>
     <div class="header">
-        <p><span>Új könyv hozzáadása</span></p>
+        <p><span>Törlés</span></p>
     </div>
     <div class="navbar">
         <a href="index.php">Könyvek</a>
