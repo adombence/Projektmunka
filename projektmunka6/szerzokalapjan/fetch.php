@@ -11,12 +11,9 @@ if(isset($_POST["query"]))
 {
 	$search = mysqli_real_escape_string($conn, $_POST["query"]);
 	$query = "
-	SELECT * FROM konyv
-	WHERE cim LIKE '%".$search."%'
-	OR ISBN LIKE '%".$search."%' 
-	OR kiadasiDatum LIKE '%".$search."%' 
-	OR oldalSzam LIKE '%".$search."%' 
-	OR eredetiNyelv LIKE '%".$search."%'
+	SELECT konyv.cim, konyv.ISBN, konyv.kiadasiDatum, konyv.oldalSzam, konyv.eredetiNyelv 
+	FROM konyv, szerzo, kapcsolo 
+	WHERE konyv.id = kapcsolo.konyvid AND szerzo.id = kapcsolo.szerzoid AND szerzo.nev LIKE '%".$search."%'
 	";
 }
 else

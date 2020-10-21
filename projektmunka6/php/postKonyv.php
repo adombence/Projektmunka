@@ -34,5 +34,5 @@ if ($result) {
 }
 
 ?><script type="text/javascript">
-    //window.location = "../index.php";
+    window.location = "http://www.adombence.hu/projektmunka6/ujadat.php";
 </script>

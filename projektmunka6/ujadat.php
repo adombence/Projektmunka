@@ -26,10 +26,10 @@ $result2 = $conn->query($sql2);
         <p><span>Új könyv hozzáadása</span></p>
     </div>
     <div class="navbar">
-        <a href="../index.html" class="nav-fooldal">Főoldal</a>
-        <!--<a href="index.html" class="active">Statikus</a>
-        <a href="dinamikus.php">Dinamikus</a>
-        <a href="#">Tetszőleges</a>-->
+        <a href="index.php">Könyvek</a>
+        <a href="szerzok/">Szerzők</a>
+        <a href="ujadat.php" class="active">Új könyv/szerző</a>
+        <a href="delete.php">törlés</a>
     </div>
     <div class="Rrow">
         <div class="footer">

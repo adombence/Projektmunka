@@ -1,25 +1,21 @@
-<?php
-include('php/connect.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Könyvek</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Szerzők</title>
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
     <!--Navigációs bár-->
     <div class="navbar">
-        <a href="#" class="active">Könyvek</a>
-        <a href="szerzok/">Szerzők</a>
-        <a href="ujadat.php">Új könyv/szerző</a>
-        <a href="delete.php">törlés</a>
+        <a href="../">Könyvek</a>
+        <a href="szerzok/" class="active">Szerzők</a>
+        <a href="../ujadat.php">Új könyv/szerző</a>
+        <a href="../delete.php">törlés</a>
     </div>
     <!--Az oldal maga-->
     <div class="row">
@@ -27,17 +23,12 @@ include('php/connect.php');
         <div class="main">
             <!--szerzok-->
             <div class="title">
-                <h1>Könyvek</h1>
+                <h1>Szerzők</h1>
             </div>
-            <a href="szerzokalapjan/index.php" class="kesz">Keresés szerző alapján</a>
-                <br>
-                <br>
             <div class="form-group">
-
                 <div class="input-group">
-                    <input type="text" name="search_text" id="search_text" placeholder="Keresés a könyvek között" class="form-control" />
+                    <input type="text" name="search_text" id="search_text" placeholder="Keresés a szerzők között" class="form-control" />
                 </div>
-
             </div>
             <br />
             <div id="result"></div>
@@ -73,7 +64,6 @@ include('php/connect.php');
             });
         });
     </script>
-
     <!--footer-->
     <div class="footer">
         <div class="footerImpressum">

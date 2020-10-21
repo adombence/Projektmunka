@@ -21,5 +21,5 @@ $sql = "INSERT INTO `szerzo`(`id`, `nev`, `nem`, `szuletett`, `elhunyt`, `szarma
 
 mysqli_query($conn, $sql);
 ?><script type="text/javascript">
-window.location = "http://www.adombence.hu/projektmunka6";
-</script> 
+    window.location = "http://www.adombence.hu/projektmunka6/ujadat.php";
+</script>

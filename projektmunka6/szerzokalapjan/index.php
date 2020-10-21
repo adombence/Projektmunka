@@ -1,10 +1,14 @@
+<?php
+include('php/connect.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szerzők</title>
+    <title>Könyvek</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
@@ -12,9 +16,10 @@
 <body>
     <!--Navigációs bár-->
     <div class="navbar">
-        <a href="../index.php">Könyvek</a>
-        <a href="szerzok.php" class="active">Szerzők</a>
-        <a href="ujadat.php">Új könyv/szerző</a>
+        <a href="../index.php" class="active">Vissza</a>
+        <a href="../szerzok/index.php">Szerzők</a>
+        <a href="../ujadat.php">Új könyv/szerző</a>
+        <a href="../delete.php">törlés</a>
     </div>
     <!--Az oldal maga-->
     <div class="row">
@@ -22,11 +27,11 @@
         <div class="main">
             <!--szerzok-->
             <div class="title">
-                <h1>Szerzők</h1>
+                <h1>Könyvek keresése szerző alapján</h1>
             </div>
             <div class="form-group">
                 <div class="input-group">
-                    <input type="text" name="search_text" id="search_text" placeholder="Keresés a szerzők között" class="form-control" />
+                    <input type="text" name="search_text" id="search_text" placeholder="Keresés a könyvek között" class="form-control" />
                 </div>
             </div>
             <br />
@@ -63,6 +68,7 @@
             });
         });
     </script>
+
     <!--footer-->
     <div class="footer">
         <div class="footerImpressum">
