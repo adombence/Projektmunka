@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+
+    /* This centers our sketch horizontally. */
+    justify-content: center;
+
+    /* This centers our sketch vertically. */
+    /*align-items: center;*/
+    color: white;
+}
+br{
+    margin-bottom: 10px;
+}
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.linkek{
+    margin-top: 10%;
+    justify-content: center;
+}
+canvas {
+    align-items: center;
+    position: relative;
+    z-index: -3 !important;
+}

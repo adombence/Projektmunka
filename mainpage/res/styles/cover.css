@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  /*background-color: #333;*/
   background-image: url(../pictures/sky.jpeg);
 }
 
@@ -105,4 +105,8 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+.tab{
+  width: 100px;
 }
