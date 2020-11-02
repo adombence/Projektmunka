@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<naprendszer>
+    <egitest>
+        <nev>Jupiter</nev>
+        <palyaadatok>
+            <apheliumtavolsaga>816 081 455 km</apheliumtavolsaga>
+            <periheliumtavolsaga>740 742 598 km</periheliumtavolsaga>
+            <felnagytengely>778 412 027 km</felnagytengely>
+            <palyakerulete>4,888 Tm</palyakerulete>
+            <palyaexcentricitasa>0,04839266</palyaexcentricitasa>
+            <sziderikuskeringesiido>4333,2867 nap (11,86 év)</sziderikuskeringesiido>
+            <szinodikusperiodus>398,88 nap</szinodikusperiodus>
+            <minpalyamentisebesség>12,446 km/s</minpalyamentisebesség>
+            <atlpalyamentisebesseg>13,056 km/s</atlpalyamentisebesseg>
+            <maxpalyamentisebesseg>13,712 km/s</maxpalyamentisebesseg>
+            <inklacio>1,30530° (6,09° a Nap egyenlítőjéhez képest)</inklacio>
+            <felszallocsomohossza>100,55615°</felszallocsomohossza>
+            <periheliumszoge></periheliumszoge>
+            <kozpontiegitest>nap</kozpontiegitest>
+            <holdak>79</holdak>
+        </palyaadatok>
+        <fizikai>
+            <felszin>Gáz</felszin>
+            <egyenlitoisugar>71 492 km</egyenlitoisugar>
+            <lapultsag>0,06487</lapultsag>
+            <felszinterulete>6,14 × 10^10 km²</felszinterulete>
+            <terfogat>1,431 × 10^15 km³</terfogat>
+            <tomeg>1,899 × 10^27 kg</tomeg>
+            <atlagossuruseg>1,326 g/cm³</atlagossuruseg>
+            <felszinigravitacio></felszinigravitacio>
+            <szokesisebesseg>59,54 km/s</szokesisebesseg>
+            <sziderikusforgasido>0,413538021 nap (9 h 55 min 29,685 s)</sziderikusforgasido>
+            <forgasisebesseg>45 300 km/h</forgasisebesseg>
+            <tengelyferdeseg>3,13°</tengelyferdeseg>
+            <eszakipolusrektaszcenzioja>268,05° (17 h 52 min 12 s)</eszakipolusrektaszcenzioja>
+            <deklinacio>64,49°</deklinacio>
+            <albedo>0,52</albedo>
+            <homerseklet>-163°C-tól -121°C-ig</homerseklet>
+        </fizikai>
+    </egitest>
+</naprendszer>

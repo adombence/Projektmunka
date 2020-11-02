@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<naprendszer>
+<egitest>
+        <nev>Uránusz</nev>
+        <palyaadatok>
+            <apheliumtavolsaga>3 006 389 405 km</apheliumtavolsaga>
+            <periheliumtavolsaga>2 735 555 035 km</periheliumtavolsaga>
+            <felnagytengely>2 870 972 220 km</felnagytengely>
+            <palyakerulete>18,029 Tm</palyakerulete>
+            <palyaexcentricitasa>0,04716771</palyaexcentricitasa>
+            <sziderikuskeringesiido>30 707,4896 nap (84,07 év)</sziderikuskeringesiido>
+            <szinodikusperiodus>369,65 nap</szinodikusperiodus>
+            <minpalyamentisebesség>6,486 km/s</minpalyamentisebesség>
+            <atlpalyamentisebesseg>6,795 km/s</atlpalyamentisebesseg>
+            <maxpalyamentisebesseg>7,128 km/s</maxpalyamentisebesseg>
+            <inklacio>0,76986° (6,48° a Nap egyenlítőjéhez képest)</inklacio>
+            <felszallocsomohossza>74,22988°</felszallocsomohossza>
+            <periheliumszoge></periheliumszoge>
+            <kozpontiegitest>nap</kozpontiegitest>
+            <holdak>27</holdak>
+        </palyaadatok>
+        <fizikai>
+            <felszin>Gáz</felszin>
+            <egyenlitoisugar>25 559 km</egyenlitoisugar>
+            <lapultsag>0,0229</lapultsag>
+            <felszinterulete>8,084×10^9 km²</felszinterulete>
+            <terfogat>6,834×10^13 km³</terfogat>
+            <tomeg>8,6832×10^25 kg</tomeg>
+            <atlagossuruseg>1,318 g/cm³</atlagossuruseg>
+            <felszinigravitacio>8,869 m/s²</felszinigravitacio>
+            <szokesisebesseg>21,29 km/s</szokesisebesseg>
+            <sziderikusforgasido>‒0,71833 nap</sziderikusforgasido>
+            <forgasisebesseg>9320 km/h</forgasisebesseg>
+            <tengelyferdeseg>97,77°</tengelyferdeseg>
+            <eszakipolusrektaszcenzioja>77,31° (5 h 9 min 15 s)</eszakipolusrektaszcenzioja>
+            <deklinacio>+15,175°</deklinacio>
+            <albedo>0,51</albedo>
+            <homerseklet>átl: -210°C</homerseklet>
+        </fizikai>
+    </egitest>
+</naprendszer>
