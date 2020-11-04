@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="https://www.adombence.hu/projektmunka8/teszt.xsl" type="text/xsl"?>
+<?xml-stylesheet href="https://www.adombence.hu/projektmunka8/xsl/teszt.xsl" type="text/xsl"?>
 
 <egitest>
     <nev>Vénusz</nev>
@@ -15,7 +15,7 @@
     <maxpalyamentisebesseg>35,259 km/s</maxpalyamentisebesseg>
     <inklacio>3,39471°</inklacio>
     <felszallocsomohossza>76,68069°</felszallocsomohossza>
-    <periheliumszoge></periheliumszoge>
+    <periheliumszoge>-</periheliumszoge>
     <kozpontiegitest>nap</kozpontiegitest>
     <holdak>nincs</holdak>
     <felszin>kőzet</felszin>

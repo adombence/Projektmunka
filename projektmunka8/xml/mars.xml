@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="https://www.adombence.hu/projektmunka8/teszt.xsl" type="text/xsl"?>
+<?xml-stylesheet href="https://www.adombence.hu/projektmunka8/xsl/teszt.xsl" type="text/xsl"?>
 <egitest>
     <nev>Mars</nev>
     <apheliumtavolsaga>249 228 730 km</apheliumtavolsaga>
@@ -14,7 +14,7 @@
     <maxpalyamentisebesseg>26,499 km/s</maxpalyamentisebesseg>
     <inklacio>1,850 61°</inklacio>
     <felszallocsomohossza>49,57854°</felszallocsomohossza>
-    <periheliumszoge></periheliumszoge>
+    <periheliumszoge>-</periheliumszoge>
     <kozpontiegitest>nap</kozpontiegitest>
     <holdak>2</holdak>
     <felszin>kőzet</felszin>
