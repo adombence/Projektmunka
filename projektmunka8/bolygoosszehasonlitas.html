@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Égitestek összehasonlítása</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        var Planet1Name = null;
+        var Planet1Val = null;
+        var Planet2Name = null;
+        var Planet2Val = null;
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Főoldal</a>
+        <a href="bolygoosszehasonlitas.html" class="active">Bolygók összehasonlítása</a>
+        <a href="osszehasonlitas.html">Naprendszer égitesteinek összehasonlítása</a>
+    </div>
+    <div class="Rrow">
+        <div class="footer">
+            <p><b>Égitestek összehasonlítása:</b><br>Válassz ki két tetszőleges égitestet, majd nyomd meg a "kész"
+                gombot.</p>
+        </div>
+        <div class="Rside">
+            <p>Első égitest:</p>
+            <select name="planet1" id="planet1">
+                <option>---- Válassz égitestet! ----</option>
+                <option value="apheliumtavolsaga">Aphélium távolsága</option>
+                <option value="periheliumtavolsaga">Perihélium távolsága</option>
+                <option value="felnagytengely">Fél nagytengely</option>
+                <option value="palyakerulete">Pálya kerülete</option>
+                <option value="palyaexcentricitasa">Pálya excentritása</option>
+                <option value="sziderikuskeringesiido">sziderikus keringési idő</option>
+                <option value="szinodikusperiodus">Szinodikusperiodus</option>
+                <option value="minpalyamentisebesség">Min. pályamenti sebesség</option>
+                <option value="atlpalyamentisebesseg">Átl. pályamenti sebesség</option>
+                <option value="maxpalyamentisebesseg">Max. pályamenti sebesség</option>
+                <option value="inklacio">Inkláció</option>
+                <option value="felszallocsomohossza">Felszálló csomó hossza</option>
+                <option value="periheliumszoge">Perihélium szöge</option>
+                <option value="kozpontiegitest">Központi égitest</option>
+                <option value="holdak">Holdak</option>
+                <option value="felszin">Felszín</option>
+                <option value="egyenlitoisugar">Egyenlítő sugár</option>
+                <option value="lapultsag">Lapultság</option>
+                <option value="felszinterulete">Felszín területe</option>
+                <option value="terfogat">Térfogat</option>
+                <option value="tomeg">Tömeg</option>
+                <option value="atlagossuruseg">Átlagos sűrűség</option>
+                <option value="felszinigravitacio">Felszíni gravitáció</option>
+                <option value="szokesisebesseg">Szökési sebesség</option>
+                <option value="sziderikusforgasido">Sziderikus forgás idő</option>
+                <option value="forgasisebesseg">Forgási sebesség</option>
+                <option value="tengelyferdeseg">Tengelyferdeség</option>
+                <option value="eszakipolusrektaszcenzioja">Az északi pólus rektaszcenziója</option>
+                <option value="deklinacio">Deklináció</option>
+                <option value="albedo">Albedó</option>
+                <option value="homerseklet">Hőmérséklet</option>
+            </select>
+        </div>
+        <div class="Rmain">
+            <p>Második égitest:</p>
+            <select name="planet2" id="planet2">
+                <option>---- Válassz égitestet! ----</option>
+                <option value="apheliumtavolsaga">Aphélium távolsága</option>
+                <option value="periheliumtavolsaga">Perihélium távolsága</option>
+                <option value="felnagytengely">Fél nagytengely</option>
+                <option value="palyakerulete">Pálya kerülete</option>
+                <option value="palyaexcentricitasa">Pálya excentritása</option>
+                <option value="sziderikuskeringesiido">sziderikus keringési idő</option>
+                <option value="szinodikusperiodus">Szinodikusperiodus</option>
+                <option value="minpalyamentisebesség">Min. pályamenti sebesség</option>
+                <option value="atlpalyamentisebesseg">Átl. pályamenti sebesség</option>
+                <option value="maxpalyamentisebesseg">Max. pályamenti sebesség</option>
+                <option value="inklacio">Inkláció</option>
+                <option value="felszallocsomohossza">Felszálló csomó hossza</option>
+                <option value="periheliumszoge">Perihélium szöge</option>
+                <option value="kozpontiegitest">Központi égitest</option>
+                <option value="holdak">Holdak</option>
+                <option value="felszin">Felszín</option>
+                <option value="egyenlitoisugar">Egyenlítő sugár</option>
+                <option value="lapultsag">Lapultság</option>
+                <option value="felszinterulete">Felszín területe</option>
+                <option value="terfogat">Térfogat</option>
+                <option value="tomeg">Tömeg</option>
+                <option value="atlagossuruseg">Átlagos sűrűség</option>
+                <option value="felszinigravitacio">Felszíni gravitáció</option>
+                <option value="szokesisebesseg">Szökési sebesség</option>
+                <option value="sziderikusforgasido">Sziderikus forgás idő</option>
+                <option value="forgasisebesseg">Forgási sebesség</option>
+                <option value="tengelyferdeseg">Tengelyferdeség</option>
+                <option value="eszakipolusrektaszcenzioja">Az északi pólus rektaszcenziója</option>
+                <option value="deklinacio">Deklináció</option>
+                <option value="albedo">Albedó</option>
+                <option value="homerseklet">Hőmérséklet</option>
+            </select>
+        </div>
+        <button onclick="palnetAtr()" class="kesz">Kész</button>
+        <div class="Rside">
+            <table id="tablazat1"></table>
+        </div>
+        <div class="Rmain">
+            <table id="tablazat2"></table>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>

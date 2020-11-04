@@ -13,6 +13,11 @@
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="index.html">Főoldal</a>
+        <a href="bolygoosszehasonlitas.html">Bolygók összehasonlítása</a>
+        <a href="osszehasonlitas.html" class="active">Naprendszer égitesteinek összehasonlítása</a>
+    </div>
     <select name="tulajdonsag" id="tulajdonsag">
         <option>---- Válassz tulajdonságot! ----</option>
         <option value="apheliumtavolsaga">Aphélium távolsága</option>
@@ -60,6 +65,7 @@
             console.log(atrVal);
             loadDoc();
         }
+
         function loadDoc() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
@@ -69,7 +75,7 @@
                     console.log("error");
                 }
             };
-            xhttp.open("GET", "naprendszer.xml", true);
+            xhttp.open("GET", "xml/naprendszer.xml", true);
             xhttp.send();
         }
 
@@ -84,8 +90,8 @@
                     "</td><td>" +
                     x[i].getElementsByTagName(atrVal)[0].childNodes[0].nodeValue +
                     "</td></tr>";
-                    console.log(x[i].getElementsByTagName("nev")[0].childNodes[0].nodeValue);
-                    console.log(x[i].getElementsByTagName(atrVal)[0].childNodes[0].nodeValue);
+                console.log(x[i].getElementsByTagName("nev")[0].childNodes[0].nodeValue);
+                console.log(x[i].getElementsByTagName(atrVal)[0].childNodes[0].nodeValue);
             }
             document.getElementById("tablazat").innerHTML = table;
         }

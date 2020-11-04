@@ -64,7 +64,7 @@ body {
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
-}
+  }
 
 /* szín megváltoztatása, ha rá mutat a kurzor */
 .navbar a:hover {
@@ -137,12 +137,7 @@ table {
     width: 100%;
 }
 
-td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
+td,
 th {
     border: 1px solid #dddddd;
     text-align: left;
@@ -175,6 +170,7 @@ tr:nth-child(even) {
     margin-bottom: 35px;
     border-radius: 10px;
     height: fit-content;
+    text-align: center;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -324,7 +320,6 @@ input[type=submit]:hover {
 .hidden_button:hover {
     background-color: #FF5252;
 }
-
 .tab {
     flex: 100%;
     background-color: white;
