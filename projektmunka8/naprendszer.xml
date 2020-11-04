@@ -376,6 +376,40 @@
         <homerseklet>átl. -229.15 °C</homerseklet>
     </egitest>
     <egitest>
+        <nev>Makemake</nev>
+        <apheliumtavolsaga>7 892 877 718 km</apheliumtavolsaga>
+        <periheliumtavolsaga>5 676 948 781 km</periheliumtavolsaga>
+        <felnagytengely>6 784 913 250 km</felnagytengely>
+        <palyakerulete>-</palyakerulete>
+        <palyaexcentricitasa>0,163</palyaexcentricitasa>
+        <sziderikuskeringesiido>111564,689 nap 305,45 év</sziderikuskeringesiido>
+        <szinodikusperiodus>306,74 év</szinodikusperiodus>
+        <minpalyamentisebesség>-</minpalyamentisebesség>
+        <atlpalyamentisebesseg>-</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>-</maxpalyamentisebesseg>
+        <inklacio>29,002°</inklacio>
+        <felszallocsomohossza>79,489°</felszallocsomohossza>
+        <periheliumszoge>295,299°</periheliumszoge>
+        <kozpontiegitest>Nap</kozpontiegitest>
+        <holdak>1</holdak>
+        <felszin>kőzet</felszin>
+        <egyenlitoisugar>1400 km</egyenlitoisugar>
+        <lapultsag>-</lapultsag>
+        <felszinterulete>-</felszinterulete>
+        <terfogat>-</terfogat>
+        <tomeg>-</tomeg>
+        <atlagossuruseg>-</atlagossuruseg>
+        <felszinigravitacio>-</felszinigravitacio>
+        <szokesisebesseg>-</szokesisebesseg>
+        <sziderikusforgasido>-</sziderikusforgasido>
+        <forgasisebesseg>-</forgasisebesseg>
+        <tengelyferdeseg>-</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>-</eszakipolusrektaszcenzioja>
+        <deklinacio>-</deklinacio>
+        <albedo>-</albedo>
+        <homerseklet>-</homerseklet>
+    </egitest>
+    <egitest>
         <nev>Haumea</nev>
         <apheliumtavolsaga>7,71 Tm</apheliumtavolsaga>
         <periheliumtavolsaga>5,194 Tm</periheliumtavolsaga>
