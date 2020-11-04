@@ -2,6 +2,40 @@
 
 <naprendszer>
     <egitest>
+        <nev>Nap</nev>
+        <apheliumtavolsaga>-</apheliumtavolsaga>
+        <periheliumtavolsaga>-</periheliumtavolsaga>
+        <felnagytengely>-</felnagytengely>
+        <palyakerulete>-</palyakerulete>
+        <palyaexcentricitasa>-</palyaexcentricitasa>
+        <sziderikuskeringesiido>-</sziderikuskeringesiido>
+        <szinodikusperiodus>-</szinodikusperiodus>
+        <minpalyamentisebesség>-</minpalyamentisebesség>
+        <atlpalyamentisebesseg>-</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>-</maxpalyamentisebesseg>
+        <inklacio>-</inklacio>
+        <felszallocsomohossza>-</felszallocsomohossza>
+        <periheliumszoge>-</periheliumszoge>
+        <kozpontiegitest></kozpontiegitest>
+        <holdak>5</holdak>
+        <felszin>Plazma/gáz</felszin>
+        <egyenlitoisugar>1,392·106 km</egyenlitoisugar>
+        <lapultsag>9·10^–6</lapultsag>
+        <felszinterulete>6,09·1012 km²</felszinterulete>
+        <terfogat>1,41·10^18 km³</terfogat>
+        <tomeg>1,9891·10^30 kg</tomeg>
+        <atlagossuruseg>1,408 g/cm³</atlagossuruseg>
+        <felszinigravitacio>273,95 m/s²</felszinigravitacio>
+        <szokesisebesseg>617,54 km/s</szokesisebesseg>
+        <sziderikusforgasido>25,3800 nap (25 nap 9 h 7 min 13 s)</sziderikusforgasido>
+        <forgasisebesseg>7174 km/h (az egyenlítőnél)</forgasisebesseg>
+        <tengelyferdeseg>7,25°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>-</eszakipolusrektaszcenzioja>
+        <deklinacio>-</deklinacio>
+        <albedo>-</albedo>
+        <homerseklet>felszín: 5780 K / korona: 5*10^6 K / Mag: ~13,6*10^6 K</homerseklet>
+    </egitest>
+    <egitest>
         <nev>Merkúr</nev>
         <apheliumtavolsaga>69 817 079 km</apheliumtavolsaga>
         <periheliumtavolsaga>46 001 272 km</periheliumtavolsaga>
