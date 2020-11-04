@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto Mono");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+}
+
+
+/* body stilus elemek*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* Header stilus elemek */
+.header {
+    padding: 100px;
+    text-align: center;
+    background-color: violet;
+    background-image: url(../pictures/főoldal.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+
+/* h1 betűméret*/
+.header h1 {
+    font-size: 40px;
+}
+
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+
+/* navbar linkek */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.form-control {
+    background-image: url('pictures/search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+/* szín megváltoztatása, ha rá mutat a kurzor */
+.navbar a:hover {
+    background-color: #FF5252;
+    color: white;
+}
+
+
+/* jelenlegi oldal megkülönböztetése a navbáron*/
+.navbar a.active {
+    background-color: #FF867F;
+    color: white;
+}
+
+/* Column konténer*/
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/* side stílus elemek*/
+.side {
+    -ms-flex: 20%;
+    /* IE10 */
+    flex: 10%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    /*font-size: 30px;*/
+}
+
+/* Main stílus elemek*/
+.main {
+    -ms-flex: 90%;
+    /* IE10 */
+    flex: 90%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+.index_button {
+    width: 100%;
+    background-color: #FF867F;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.index_button:hover {
+    background-color: #FF5252;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* table */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/*páros sorok*/
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+/* Column konténer*/
+.Rrow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: #ddd;
+}
+
+/* side stílus elemek*/
+.Rside {
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Main stílus elemek*/
+.Rmain {
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    height: fit-content;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/* Column konténer*/
+.kisrow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+/* kisside stílus elemek*/
+.kisside {
+    flex: 40%;
+    background-color: #FF867F;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* kisMain stílus elemek*/
+.kismain {
+    flex: 40%;
+    background-color: #FF867F;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    height: fit-content;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+span {
+    background-color: black;
+}
+
+.ujszerzo {
+    background-color: #FF867F;
+}
+
+
+.kitolto {
+    height: 385px;
+}
+
+.segitseg {
+    font-size: small;
+}
+
+.title {
+    text-align: center;
+}
+
+div.rejtett {
+    display: none;
+}
+
+.kesz {
+    width: 100%;
+    background-color: #FF867F;
+    color: 61616;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.kesz:hover {
+    background-color: #FF5252;
+}
+
+input[type=text],
+select {
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #FF867F;
+    color: 61616;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FF5252;
+}
+
+.hidden_button {
+    width: 100%;
+    background-color: #FF867F;
+    color: 61616;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hidden_button:hover {
+    background-color: #FF5252;
+}
+
+.tab {
+    flex: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .Rrow {
+        flex-direction: column;
+        font-size: small;
+    }
+
+    .Rmain {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .Rside {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+
+    .body {
+        padding-top: 0px !important;
+    }
+
+    .navbar {
+        position: initial !important;
+    }
+}
+
+
+/*Responsive layout - 700px*/
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .navbar {
+        position: relative !important;
+    }
+
+    .Rrow {
+        flex-direction: column;
+        font-size: small;
+    }
+
+    .Rmain {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .Rside {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+/*Responsive layout - 400px*/
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+
+    .navbar {
+        position: relative !important;
+    }
+
+    .Rrow {
+        flex-direction: column;
+        font-size: small;
+    }
+
+    .Rmain {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .Rside {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+/*gombok stílus elemei*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+a {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}

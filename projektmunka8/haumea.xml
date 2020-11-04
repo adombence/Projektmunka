@@ -1,0 +1,34 @@
+<egitest>
+    <nev>Haumea</nev>
+    <apheliumtavolsaga>7,71 Tm</apheliumtavolsaga>
+    <periheliumtavolsaga>5,194 Tm</periheliumtavolsaga>
+    <felnagytengely>43,335 CsE</felnagytengely>
+    <palyakerulete>-</palyakerulete>
+    <palyaexcentricitasa>0,18874</palyaexcentricitasa>
+    <sziderikuskeringesiido>285,4 év</sziderikuskeringesiido>
+    <szinodikusperiodus>306,74 év</szinodikusperiodus>
+    <minpalyamentisebesség>-</minpalyamentisebesség>
+    <atlpalyamentisebesseg>-</atlpalyamentisebesseg>
+    <maxpalyamentisebesseg>-</maxpalyamentisebesseg>
+    <inklacio>28,22°</inklacio>
+    <felszallocsomohossza>79,489°</felszallocsomohossza>
+    <periheliumszoge>239,18°</periheliumszoge>
+    <kozpontiegitest>Nap</kozpontiegitest>
+    <holdak>2</holdak>
+    <felszin>kőzet</felszin>
+    <egyenlitoisugar>~750 km</egyenlitoisugar>
+    <lapultsag>-</lapultsag>
+    <felszinterulete>2*10^7 km²</felszinterulete>
+    <terfogat>-</terfogat>
+    <tomeg>(4,006 ± 0,040)·10^21 kg</tomeg>
+    <atlagossuruseg>2,6–3,3 g/cm³</atlagossuruseg>
+    <felszinigravitacio>0,44 m/s²</felszinigravitacio>
+    <szokesisebesseg>0,84 km/s²</szokesisebesseg>
+    <sziderikusforgasido>0,163 146 ± 0,000 004 d (3,915 5 ± 0,000 1 h)</sziderikusforgasido>
+    <forgasisebesseg>-</forgasisebesseg>
+    <tengelyferdeseg>-</tengelyferdeseg>
+    <eszakipolusrektaszcenzioja>-</eszakipolusrektaszcenzioja>
+    <deklinacio>-</deklinacio>
+    <albedo>-</albedo>
+    <homerseklet>-</homerseklet>
+</egitest>

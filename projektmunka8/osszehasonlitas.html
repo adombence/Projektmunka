@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Összes égitest összehasonlítása</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        var atrVal = null;
+        var atrName = null;
+    </script>
+</head>
+
+<body>
+    <select name="tulajdonsag" id="tulajdonsag">
+        <option>---- Válassz tulajdonságot! ----</option>
+        <option value="apheliumtavolsaga">Aphélium távolsága</option>
+        <option value="periheliumtavolsaga">Perihélium távolsága</option>
+        <option value="felnagytengely">Fél nagytengely</option>
+        <option value="palyakerulete">Pálya kerülete</option>
+        <option value="palyaexcentricitasa">Pálya excentritása</option>
+        <option value="sziderikuskeringesiido">sziderikus keringési idő</option>
+        <option value="szinodikusperiodus">Szinodikusperiodus</option>
+        <option value="minpalyamentisebesség">Min. pályamenti sebesség</option>
+        <option value="atlpalyamentisebesseg">Átl. pályamenti sebesség</option>
+        <option value="maxpalyamentisebesseg">Max. pályamenti sebesség</option>
+        <option value="inklacio">Inkláció</option>
+        <option value="felszallocsomohossza">Felszálló csomó hossza</option>
+        <option value="periheliumszoge">Perihélium szöge</option>
+        <option value="kozpontiegitest">Központi égitest</option>
+        <option value="holdak">Holdak</option>
+        <option value="felszin">Felszín</option>
+        <option value="egyenlitoisugar">Egyenlítő sugár</option>
+        <option value="lapultsag">Lapultság</option>
+        <option value="felszinterulete">Felszín területe</option>
+        <option value="terfogat">Térfogat</option>
+        <option value="tomeg">Tömeg</option>
+        <option value="atlagossuruseg">Átlagos sűrűség</option>
+        <option value="felszinigravitacio">Felszíni gravitáció</option>
+        <option value="szokesisebesseg">Szökési sebesség</option>
+        <option value="sziderikusforgasido">Sziderikus forgás idő</option>
+        <option value="forgasisebesseg">Forgási sebesség</option>
+        <option value="tengelyferdeseg">Tengelyferdeség</option>
+        <option value="eszakipolusrektaszcenzioja">Az északi pólus rektaszcenziója</option>
+        <option value="deklinacio">Deklináció</option>
+        <option value="albedo">Albedó</option>
+        <option value="homerseklet">Hőmérséklet</option>
+    </select>
+    <button onclick="palnetAtr()" class="kesz">Kész</button>
+
+    <table id="tablazat"></table>
+
+    <script>
+        function palnetAtr() {
+            var e = document.getElementById("tulajdonsag");
+            atrName = e.options[e.selectedIndex].text;
+            atrVal = e.options[e.selectedIndex].value;
+            console.log(atrName);
+            console.log(atrVal);
+            loadDoc();
+        }
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                } else {
+                    console.log("error");
+                }
+            };
+            xhttp.open("GET", "naprendszer.xml", true);
+            xhttp.send();
+        }
+
+        function myFunction(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table = "<tr><th>Név</th><th>" + atrName + "</th></tr>";
+            var x = xmlDoc.getElementsByTagName("egitest");
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("nev")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName(atrVal)[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+                    console.log(x[i].getElementsByTagName("nev")[0].childNodes[0].nodeValue);
+                    console.log(x[i].getElementsByTagName(atrVal)[0].childNodes[0].nodeValue);
+            }
+            document.getElementById("tablazat").innerHTML = table;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

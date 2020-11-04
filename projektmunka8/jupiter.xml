@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://www.adombence.hu/projektmunka8/teszt.xsl" type="text/xsl"?>
 
-<naprendszer>
     <egitest>
         <nev>Jupiter</nev>
-        <palyaadatok>
             <apheliumtavolsaga>816 081 455 km</apheliumtavolsaga>
             <periheliumtavolsaga>740 742 598 km</periheliumtavolsaga>
             <felnagytengely>778 412 027 km</felnagytengely>
@@ -19,8 +18,6 @@
             <periheliumszoge></periheliumszoge>
             <kozpontiegitest>nap</kozpontiegitest>
             <holdak>79</holdak>
-        </palyaadatok>
-        <fizikai>
             <felszin>Gáz</felszin>
             <egyenlitoisugar>71 492 km</egyenlitoisugar>
             <lapultsag>0,06487</lapultsag>
@@ -37,6 +34,4 @@
             <deklinacio>64,49°</deklinacio>
             <albedo>0,52</albedo>
             <homerseklet>-163°C-tól -121°C-ig</homerseklet>
-        </fizikai>
     </egitest>
-</naprendszer>

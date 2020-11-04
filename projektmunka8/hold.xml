@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://www.adombence.hu/projektmunka8/teszt.xsl" type="text/xsl"?>
+<egitest>
+    <nev>Hold</nev>
+    <apheliumtavolsaga>-</apheliumtavolsaga>
+    <periheliumtavolsaga>-</periheliumtavolsaga>
+    <felnagytengely>384 400 km</felnagytengely>
+    <palyakerulete>2 413 402 km</palyakerulete>
+    <palyaexcentricitasa>0,0554</palyaexcentricitasa>
+    <sziderikuskeringesiido>-</sziderikuskeringesiido>
+    <szinodikusperiodus>29,5305889 nap (29 nap 12 óra 44,05 perc)</szinodikusperiodus>
+    <minpalyamentisebesség>0,968 km/s</minpalyamentisebesség>
+    <atlpalyamentisebesseg>1,022 km/s</atlpalyamentisebesseg>
+    <maxpalyamentisebesseg>1,082 km/s</maxpalyamentisebesseg>
+    <inklacio>változik: 28,60° és 18,30° között (5,145 396° az ekliptikával)</inklacio>
+    <felszallocsomohossza>125,08°</felszallocsomohossza>
+    <periheliumszoge>-</periheliumszoge>
+    <kozpontiegitest>Föld</kozpontiegitest>
+    <holdak>-</holdak>
+    <felszin>kőzet</felszin>
+    <egyenlitoisugar>3476,2 km (a földi 0,273-szerese)</egyenlitoisugar>
+    <lapultsag>0,0012</lapultsag>
+    <felszinterulete>3,793·107 km² (a földi 0,074-szerese)</felszinterulete>
+    <terfogat>-</terfogat>
+    <tomeg>7,347673·1022 kg (0,0123 földi)</tomeg>
+    <atlagossuruseg>3344 kg/m³</atlagossuruseg>
+    <felszinigravitacio>1,622 m/s²</felszinigravitacio>
+    <szokesisebesseg>2,38 km/s</szokesisebesseg>
+    <sziderikusforgasido>27,321661 nap (kötött keringés)</sziderikusforgasido>
+    <forgasisebesseg>-</forgasisebesseg>
+    <tengelyferdeseg>3,60°-tól 6,69°-ig változik</tengelyferdeseg>
+    <eszakipolusrektaszcenzioja>266,8577° (17 h 47 m 26 s)</eszakipolusrektaszcenzioja>
+    <deklinacio>65,6411°</deklinacio>
+    <albedo>0,12</albedo>
+    <homerseklet>átl. -23.15</homerseklet>
+</egitest>

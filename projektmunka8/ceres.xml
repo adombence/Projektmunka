@@ -1,0 +1,34 @@
+<egitest>
+    <nev>Ceres</nev>
+    <apheliumtavolsaga>447 838 164 km</apheliumtavolsaga>
+    <periheliumtavolsaga>381 419 582 km</periheliumtavolsaga>
+    <felnagytengely>414 703 838 km</felnagytengely>
+    <palyakerulete>-</palyakerulete>
+    <palyaexcentricitasa>0,07976017</palyaexcentricitasa>
+    <sziderikuskeringesiido>-</sziderikuskeringesiido>
+    <szinodikusperiodus>-</szinodikusperiodus>
+    <minpalyamentisebesség>-</minpalyamentisebesség>
+    <atlpalyamentisebesseg>17,882 km/s</atlpalyamentisebesseg>
+    <maxpalyamentisebesseg>-</maxpalyamentisebesseg>
+    <inklacio>10,586712°</inklacio>
+    <felszallocsomohossza>80,40696°</felszallocsomohossza>
+    <periheliumszoge>73,15073°</periheliumszoge>
+    <kozpontiegitest>Nap</kozpontiegitest>
+    <holdak>-</holdak>
+    <felszin>kőzet</felszin>
+    <egyenlitoisugar>487,3 ± 1,8 km</egyenlitoisugar>
+    <lapultsag>0,067 ± 0,005</lapultsag>
+    <felszinterulete>-</felszinterulete>
+    <terfogat>-</terfogat>
+    <tomeg>(9,43 ± 0,07)·10^20 kg</tomeg>
+    <atlagossuruseg>2,077 ± 0,036 g/cm³</atlagossuruseg>
+    <felszinigravitacio>0,27 m/s²</felszinigravitacio>
+    <szokesisebesseg>0,51 km/s</szokesisebesseg>
+    <sziderikusforgasido>0,3781 d 9,074 h</sziderikusforgasido>
+    <forgasisebesseg>-</forgasisebesseg>
+    <tengelyferdeseg>körülbelül 3°</tengelyferdeseg>
+    <eszakipolusrektaszcenzioja>-</eszakipolusrektaszcenzioja>
+    <deklinacio>59°</deklinacio>
+    <albedo>0,090 ± 0,0033</albedo>
+    <homerseklet>átl. -106.15 °C</homerseklet>
+</egitest>

@@ -3,306 +3,444 @@
 <naprendszer>
     <egitest>
         <nev>Merkúr</nev>
-        <palyaadatok>
-            <apheliumtavolsaga>69 817 079 km</apheliumtavolsaga>
-            <periheliumtavolsaga>46 001 272 km</periheliumtavolsaga>
-            <felnagytengely>57 909 176 km</felnagytengely>
-            <palyakerulete>36 000 000 km</palyakerulete>
-            <palyaexcentricitasa>0,20563069</palyaexcentricitasa>
-            <sziderikuskeringesiido>87,96934 nap</sziderikuskeringesiido>
-            <szinodikusperiodus>115,8776 nap</szinodikusperiodus>
-            <minpalyamentisebesség>38,86 km/s</minpalyamentisebesség>
-            <atlpalyamentisebesseg>47,36 km/s</atlpalyamentisebesseg>
-            <maxpalyamentisebesseg>58,98 km/s</maxpalyamentisebesseg>
-            <inklacio>7,00487°</inklacio>
-            <felszallocsomohossza>48,33167°</felszallocsomohossza>
-            <periheliumszoge>77,45645° (2000)</periheliumszoge>
-            <kozpontiegitest>nap</kozpontiegitest>
-            <holdak>nincs</holdak>
-        </palyaadatok>
-        <fizikai>
-            <felszin>kőzet</felszin>
-            <egyenlitoisugar>2439,7 km</egyenlitoisugar>
-            <lapultsag>0,0006</lapultsag>
-            <felszinterulete>7,5×10^7 km²</felszinterulete>
-            <terfogat>6,083×10^10 km³</terfogat>
-            <tomeg>3,302×10^23 kg</tomeg>
-            <atlagossuruseg>5,427 g/cm³</atlagossuruseg>
-            <felszinigravitacio>3,701 m/s² (0,378 g)</felszinigravitacio>
-            <szokesisebesseg>4,435 km/s</szokesisebesseg>
-            <sziderikusforgasido>58,6462 nap (58 nap 15,5088 ó)</sziderikusforgasido>
-            <forgasisebesseg>10,892 km/h (az egyenlítőnél)</forgasisebesseg>
-            <tengelyferdeseg>~2,11°</tengelyferdeseg>
-            <eszakipolusrektaszcenzioja>281,01° (18 h 44 min 2 s)</eszakipolusrektaszcenzioja>
-            <deklinacio>61,45°</deklinacio>
-            <albedo>0,119</albedo>
-            <homerseklet>-185°C-tól 430°C-ig</homerseklet>
-        </fizikai>
+        <apheliumtavolsaga>69 817 079 km</apheliumtavolsaga>
+        <periheliumtavolsaga>46 001 272 km</periheliumtavolsaga>
+        <felnagytengely>57 909 176 km</felnagytengely>
+        <palyakerulete>36 000 000 km</palyakerulete>
+        <palyaexcentricitasa>0,20563069</palyaexcentricitasa>
+        <sziderikuskeringesiido>87,96934 nap</sziderikuskeringesiido>
+        <szinodikusperiodus>115,8776 nap</szinodikusperiodus>
+        <minpalyamentisebesség>38,86 km/s</minpalyamentisebesség>
+        <atlpalyamentisebesseg>47,36 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>58,98 km/s</maxpalyamentisebesseg>
+        <inklacio>7,00487°</inklacio>
+        <felszallocsomohossza>48,33167°</felszallocsomohossza>
+        <periheliumszoge>77,45645° (2000)</periheliumszoge>
+        <kozpontiegitest>nap</kozpontiegitest>
+        <holdak>nincs</holdak>
+        <felszin>kőzet</felszin>
+        <egyenlitoisugar>2439,7 km</egyenlitoisugar>
+        <lapultsag>0,0006</lapultsag>
+        <felszinterulete>7,5×10^7 km²</felszinterulete>
+        <terfogat>6,083×10^10 km³</terfogat>
+        <tomeg>3,302×10^23 kg</tomeg>
+        <atlagossuruseg>5,427 g/cm³</atlagossuruseg>
+        <felszinigravitacio>3,701 m/s² (0,378 g)</felszinigravitacio>
+        <szokesisebesseg>4,435 km/s</szokesisebesseg>
+        <sziderikusforgasido>58,6462 nap (58 nap 15,5088 ó)</sziderikusforgasido>
+        <forgasisebesseg>10,892 km/h (az egyenlítőnél)</forgasisebesseg>
+        <tengelyferdeseg>~2,11°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>281,01° (18 h 44 min 2 s)</eszakipolusrektaszcenzioja>
+        <deklinacio>61,45°</deklinacio>
+        <albedo>0,119</albedo>
+        <homerseklet>-185°C-tól 430°C-ig</homerseklet>
     </egitest>
     <egitest>
         <nev>Vénusz</nev>
-        <palyaadatok>
-            <apheliumtavolsaga>108 941 849 km</apheliumtavolsaga>
-            <periheliumtavolsaga>107 476 002 km</periheliumtavolsaga>
-            <felnagytengely>108 208 926 km</felnagytengely>
-            <palyakerulete>680 000 000 km</palyakerulete>
-            <palyaexcentricitasa>0,00677323</palyaexcentricitasa>
-            <sziderikuskeringesiido>224,70069 nap</sziderikuskeringesiido>
-            <szinodikusperiodus>583,92 nap</szinodikusperiodus>
-            <minpalyamentisebesség>34,784 km/s</minpalyamentisebesség>
-            <atlpalyamentisebesseg>35,020 km/s</atlpalyamentisebesseg>
-            <maxpalyamentisebesseg>35,259 km/s</maxpalyamentisebesseg>
-            <inklacio>3,39471°</inklacio>
-            <felszallocsomohossza>76,68069°</felszallocsomohossza>
-            <periheliumszoge></periheliumszoge>
-            <kozpontiegitest>nap</kozpontiegitest>
-            <holdak>nincs</holdak>
-        </palyaadatok>
-        <fizikai>
-            <felszin>kőzet</felszin>
-            <egyenlitoisugar>6051,8 km</egyenlitoisugar>
-            <lapultsag>~0.0002</lapultsag>
-            <felszinterulete>4,60×10^8 km²</felszinterulete>
-            <terfogat>9,28×10^11 km³</terfogat>
-            <tomeg>4,8685×10^24</tomeg>
-            <atlagossuruseg>5,204 g/cm³</atlagossuruseg>
-            <felszinigravitacio>8,87 m/s² (0,904 g)</felszinigravitacio>
-            <szokesisebesseg>10,36 km/s</szokesisebesseg>
-            <sziderikusforgasido>-243,0212 nap +- 0,00006 nap</sziderikusforgasido>
-            <forgasisebesseg>6,52 km/h (az egyenlítőnél)</forgasisebesseg>
-            <tengelyferdeseg>2,64°</tengelyferdeseg>
-            <eszakipolusrektaszcenzioja>272,76° (18 h 11 min 2 s)</eszakipolusrektaszcenzioja>
-            <deklinacio>67,16°</deklinacio>
-            <albedo>0,65</albedo>
-            <homerseklet>-180°C-tól 240°C-ig</homerseklet>
-        </fizikai>
+        <apheliumtavolsaga>108 941 849 km</apheliumtavolsaga>
+        <periheliumtavolsaga>107 476 002 km</periheliumtavolsaga>
+        <felnagytengely>108 208 926 km</felnagytengely>
+        <palyakerulete>680 000 000 km</palyakerulete>
+        <palyaexcentricitasa>0,00677323</palyaexcentricitasa>
+        <sziderikuskeringesiido>224,70069 nap</sziderikuskeringesiido>
+        <szinodikusperiodus>583,92 nap</szinodikusperiodus>
+        <minpalyamentisebesség>34,784 km/s</minpalyamentisebesség>
+        <atlpalyamentisebesseg>35,020 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>35,259 km/s</maxpalyamentisebesseg>
+        <inklacio>3,39471°</inklacio>
+        <felszallocsomohossza>76,68069°</felszallocsomohossza>
+        <periheliumszoge>-</periheliumszoge>
+        <kozpontiegitest>nap</kozpontiegitest>
+        <holdak>nincs</holdak>
+        <felszin>kőzet</felszin>
+        <egyenlitoisugar>6051,8 km</egyenlitoisugar>
+        <lapultsag>~0.0002</lapultsag>
+        <felszinterulete>4,60×10^8 km²</felszinterulete>
+        <terfogat>9,28×10^11 km³</terfogat>
+        <tomeg>4,8685×10^24</tomeg>
+        <atlagossuruseg>5,204 g/cm³</atlagossuruseg>
+        <felszinigravitacio>8,87 m/s² (0,904 g)</felszinigravitacio>
+        <szokesisebesseg>10,36 km/s</szokesisebesseg>
+        <sziderikusforgasido>-243,0212 nap +- 0,00006 nap</sziderikusforgasido>
+        <forgasisebesseg>6,52 km/h (az egyenlítőnél)</forgasisebesseg>
+        <tengelyferdeseg>2,64°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>272,76° (18 h 11 min 2 s)</eszakipolusrektaszcenzioja>
+        <deklinacio>67,16°</deklinacio>
+        <albedo>0,65</albedo>
+        <homerseklet>-180°C-tól 240°C-ig</homerseklet>
     </egitest>
     <egitest>
         <nev>Föld</nev>
-        <palyaadatok>
-            <apheliumtavolsaga>152 097 701 km</apheliumtavolsaga>
-            <periheliumtavolsaga>147 098 074 km</periheliumtavolsaga>
-            <felnagytengely>149 597 887,5 km</felnagytengely>
-            <palyakerulete>924 375 700 kmm</palyakerulete>
-            <palyaexcentricitasa>0,016710219</palyaexcentricitasa>
-            <sziderikuskeringesiido>365,256366 nap</sziderikuskeringesiido>
-            <szinodikusperiodus></szinodikusperiodus>
-            <minpalyamentisebesség>29,291 km/s</minpalyamentisebesség>
-            <atlpalyamentisebesseg>29,783 km/s</atlpalyamentisebesseg>
-            <maxpalyamentisebesseg>30,287 km/s</maxpalyamentisebesseg>
-            <inklacio>1°34'43,3"</inklacio>
-            <felszallocsomohossza>348,73936°</felszallocsomohossza>
-            <periheliumszoge>114,20783°</periheliumszoge>
-            <kozpontiegitest>nap</kozpontiegitest>
-            <holdak>1</holdak>
-        </palyaadatok>
-        <fizikai>
-            <felszin>kőzet</felszin>
-            <egyenlitoisugar>6378,137 km</egyenlitoisugar>
-            <lapultsag>0,0033528</lapultsag>
-            <felszinterulete>510 072 000 km²</felszinterulete>
-            <terfogat>1,0832073·10^12 km³</terfogat>
-            <tomeg>5,9736·10^24 kg</tomeg>
-            <atlagossuruseg>5515,3 kg/m³</atlagossuruseg>
-            <felszinigravitacio>9,8 m/s²</felszinigravitacio>
-            <szokesisebesseg>11,186 km/s (39 600 km/h)</szokesisebesseg>
-            <sziderikusforgasido>0,99726968 nap (23 h 56 m 4,1 s)</sziderikusforgasido>
-            <forgasisebesseg>1674,396 km/h (az egyenlítőnél)</forgasisebesseg>
-            <tengelyferdeseg>23,439281°</tengelyferdeseg>
-            <eszakipolusrektaszcenzioja>0° (0 h 0 min 0 s)</eszakipolusrektaszcenzioja>
-            <deklinacio>+90°</deklinacio>
-            <albedo>0,367</albedo>
-            <homerseklet>-89,2°C-tól 57,7°C-ig</homerseklet>
-        </fizikai>
+        <apheliumtavolsaga>152 097 701 km</apheliumtavolsaga>
+        <periheliumtavolsaga>147 098 074 km</periheliumtavolsaga>
+        <felnagytengely>149 597 887,5 km</felnagytengely>
+        <palyakerulete>924 375 700 kmm</palyakerulete>
+        <palyaexcentricitasa>0,016710219</palyaexcentricitasa>
+        <sziderikuskeringesiido>365,256366 nap</sziderikuskeringesiido>
+        <szinodikusperiodus>-</szinodikusperiodus>
+        <minpalyamentisebesség>29,291 km/s</minpalyamentisebesség>
+        <atlpalyamentisebesseg>29,783 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>30,287 km/s</maxpalyamentisebesseg>
+        <inklacio>1°34'43,3"</inklacio>
+        <felszallocsomohossza>348,73936°</felszallocsomohossza>
+        <periheliumszoge>114,20783°</periheliumszoge>
+        <kozpontiegitest>nap</kozpontiegitest>
+        <holdak>1</holdak>
+        <felszin>kőzet</felszin>
+        <egyenlitoisugar>6378,137 km</egyenlitoisugar>
+        <lapultsag>0,0033528</lapultsag>
+        <felszinterulete>510 072 000 km²</felszinterulete>
+        <terfogat>1,0832073·10^12 km³</terfogat>
+        <tomeg>5,9736·10^24 kg</tomeg>
+        <atlagossuruseg>5515,3 kg/m³</atlagossuruseg>
+        <felszinigravitacio>9,8 m/s²</felszinigravitacio>
+        <szokesisebesseg>11,186 km/s (39 600 km/h)</szokesisebesseg>
+        <sziderikusforgasido>0,99726968 nap (23 h 56 m 4,1 s)</sziderikusforgasido>
+        <forgasisebesseg>1674,396 km/h (az egyenlítőnél)</forgasisebesseg>
+        <tengelyferdeseg>23,439281°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>0° (0 h 0 min 0 s)</eszakipolusrektaszcenzioja>
+        <deklinacio>+90°</deklinacio>
+        <albedo>0,367</albedo>
+        <homerseklet>-89,2°C-tól 57,7°C-ig</homerseklet>
+    </egitest>
+    <egitest>
+        <nev>Hold</nev>
+        <apheliumtavolsaga>-</apheliumtavolsaga>
+        <periheliumtavolsaga>-</periheliumtavolsaga>
+        <felnagytengely>384 400 km</felnagytengely>
+        <palyakerulete>2 413 402 km</palyakerulete>
+        <palyaexcentricitasa>0,0554</palyaexcentricitasa>
+        <sziderikuskeringesiido>-</sziderikuskeringesiido>
+        <szinodikusperiodus>29,5305889 nap (29 nap 12 óra 44,05 perc)</szinodikusperiodus>
+        <minpalyamentisebesség>0,968 km/s</minpalyamentisebesség>
+        <atlpalyamentisebesseg>1,022 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>1,082 km/s</maxpalyamentisebesseg>
+        <inklacio>változik: 28,60° és 18,30° között (5,145 396° az ekliptikával)</inklacio>
+        <felszallocsomohossza>125,08°</felszallocsomohossza>
+        <periheliumszoge>-</periheliumszoge>
+        <kozpontiegitest>Föld</kozpontiegitest>
+        <holdak>-</holdak>
+        <felszin>kőzet</felszin>
+        <egyenlitoisugar>3476,2 km (a földi 0,273-szerese)</egyenlitoisugar>
+        <lapultsag>0,0012</lapultsag>
+        <felszinterulete>3,793·107 km² (a földi 0,074-szerese)</felszinterulete>
+        <terfogat>-</terfogat>
+        <tomeg>7,347673·1022 kg (0,0123 földi)</tomeg>
+        <atlagossuruseg>3344 kg/m³</atlagossuruseg>
+        <felszinigravitacio>1,622 m/s²</felszinigravitacio>
+        <szokesisebesseg>2,38 km/s</szokesisebesseg>
+        <sziderikusforgasido>27,321661 nap (kötött keringés)</sziderikusforgasido>
+        <forgasisebesseg>-</forgasisebesseg>
+        <tengelyferdeseg>3,60°-tól 6,69°-ig változik</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>266,8577° (17 h 47 m 26 s)</eszakipolusrektaszcenzioja>
+        <deklinacio>65,6411°</deklinacio>
+        <albedo>0,12</albedo>
+        <homerseklet>átl. -23.15</homerseklet>
     </egitest>
     <egitest>
         <nev>Mars</nev>
-        <palyaadatok>
-            <apheliumtavolsaga>249 228 730 km</apheliumtavolsaga>
-            <periheliumtavolsaga>206 644 545 km</periheliumtavolsaga>
-            <felnagytengely>227 936 637 km</felnagytengely>
-            <palyakerulete>1 429 000 000 km</palyakerulete>
-            <palyaexcentricitasa>0,09341233</palyaexcentricitasa>
-            <sziderikuskeringesiido>686,96 nap</sziderikuskeringesiido>
-            <szinodikusperiodus>779,96 nap</szinodikusperiodus>
-            <minpalyamentisebesség>21,972 km/s</minpalyamentisebesség>
-            <atlpalyamentisebesseg>24,077 km/s</atlpalyamentisebesseg>
-            <maxpalyamentisebesseg>26,499 km/s</maxpalyamentisebesseg>
-            <inklacio>1,850 61°</inklacio>
-            <felszallocsomohossza>49,57854°</felszallocsomohossza>
-            <periheliumszoge></periheliumszoge>
-            <kozpontiegitest>nap</kozpontiegitest>
-            <holdak>2</holdak>
-        </palyaadatok>
-        <fizikai>
-            <felszin>kőzet</felszin>
-            <egyenlitoisugar>3396,2 km</egyenlitoisugar>
-            <lapultsag>0,00736</lapultsag>
-            <felszinterulete>1,448·10^8 km²</felszinterulete>
-            <terfogat>1,6318·10^11 km³</terfogat>
-            <tomeg>6,4171·10^23 kg</tomeg>
-            <atlagossuruseg>3,933 g/cm³</atlagossuruseg>
-            <felszinigravitacio>3,71 m/s²</felszinigravitacio>
-            <szokesisebesseg>5,027 km/s</szokesisebesseg>
-            <sziderikusforgasido>1,025957 nap (24,622962 óra)</sziderikusforgasido>
-            <forgasisebesseg>868,22 km/h</forgasisebesseg>
-            <tengelyferdeseg>25,19°</tengelyferdeseg>
-            <eszakipolusrektaszcenzioja>317,681 43° (21 h 10 min 44 s)</eszakipolusrektaszcenzioja>
-            <deklinacio>52,88650°</deklinacio>
-            <albedo>0,15</albedo>
-            <homerseklet>-140°C-tól 20°C-ig</homerseklet>
-        </fizikai>
+        <apheliumtavolsaga>249 228 730 km</apheliumtavolsaga>
+        <periheliumtavolsaga>206 644 545 km</periheliumtavolsaga>
+        <felnagytengely>227 936 637 km</felnagytengely>
+        <palyakerulete>1 429 000 000 km</palyakerulete>
+        <palyaexcentricitasa>0,09341233</palyaexcentricitasa>
+        <sziderikuskeringesiido>686,96 nap</sziderikuskeringesiido>
+        <szinodikusperiodus>779,96 nap</szinodikusperiodus>
+        <minpalyamentisebesség>21,972 km/s</minpalyamentisebesség>
+        <atlpalyamentisebesseg>24,077 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>26,499 km/s</maxpalyamentisebesseg>
+        <inklacio>1,850 61°</inklacio>
+        <felszallocsomohossza>49,57854°</felszallocsomohossza>
+        <periheliumszoge>-</periheliumszoge>
+        <kozpontiegitest>nap</kozpontiegitest>
+        <holdak>2</holdak>
+        <felszin>kőzet</felszin>
+        <egyenlitoisugar>3396,2 km</egyenlitoisugar>
+        <lapultsag>0,00736</lapultsag>
+        <felszinterulete>1,448·10^8 km²</felszinterulete>
+        <terfogat>1,6318·10^11 km³</terfogat>
+        <tomeg>6,4171·10^23 kg</tomeg>
+        <atlagossuruseg>3,933 g/cm³</atlagossuruseg>
+        <felszinigravitacio>3,71 m/s²</felszinigravitacio>
+        <szokesisebesseg>5,027 km/s</szokesisebesseg>
+        <sziderikusforgasido>1,025957 nap (24,622962 óra)</sziderikusforgasido>
+        <forgasisebesseg>868,22 km/h</forgasisebesseg>
+        <tengelyferdeseg>25,19°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>317,681 43° (21 h 10 min 44 s)</eszakipolusrektaszcenzioja>
+        <deklinacio>52,88650°</deklinacio>
+        <albedo>0,15</albedo>
+        <homerseklet>-140°C-tól 20°C-ig</homerseklet>
+    </egitest>
+    <egitest>
+        <nev>Ceres</nev>
+        <apheliumtavolsaga>447 838 164 km</apheliumtavolsaga>
+        <periheliumtavolsaga>381 419 582 km</periheliumtavolsaga>
+        <felnagytengely>414 703 838 km</felnagytengely>
+        <palyakerulete>-</palyakerulete>
+        <palyaexcentricitasa>0,07976017</palyaexcentricitasa>
+        <sziderikuskeringesiido>-</sziderikuskeringesiido>
+        <szinodikusperiodus>-</szinodikusperiodus>
+        <minpalyamentisebesség>-</minpalyamentisebesség>
+        <atlpalyamentisebesseg>17,882 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>-</maxpalyamentisebesseg>
+        <inklacio>10,586712°</inklacio>
+        <felszallocsomohossza>80,40696°</felszallocsomohossza>
+        <periheliumszoge>73,15073°</periheliumszoge>
+        <kozpontiegitest>Nap</kozpontiegitest>
+        <holdak>-</holdak>
+        <felszin>kőzet</felszin>
+        <egyenlitoisugar>487,3 ± 1,8 km</egyenlitoisugar>
+        <lapultsag>0,067 ± 0,005</lapultsag>
+        <felszinterulete>-</felszinterulete>
+        <terfogat>-</terfogat>
+        <tomeg>(9,43 ± 0,07)·10^20 kg</tomeg>
+        <atlagossuruseg>2,077 ± 0,036 g/cm³</atlagossuruseg>
+        <felszinigravitacio>0,27 m/s²</felszinigravitacio>
+        <szokesisebesseg>0,51 km/s</szokesisebesseg>
+        <sziderikusforgasido>0,3781 d 9,074 h</sziderikusforgasido>
+        <forgasisebesseg>-</forgasisebesseg>
+        <tengelyferdeseg>körülbelül 3°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>-</eszakipolusrektaszcenzioja>
+        <deklinacio>59°</deklinacio>
+        <albedo>0,090 ± 0,0033</albedo>
+        <homerseklet>átl. -106.15 °C</homerseklet>
     </egitest>
     <egitest>
         <nev>Jupiter</nev>
-        <palyaadatok>
-            <apheliumtavolsaga>816 081 455 km</apheliumtavolsaga>
-            <periheliumtavolsaga>740 742 598 km</periheliumtavolsaga>
-            <felnagytengely>778 412 027 km</felnagytengely>
-            <palyakerulete>4,888 Tm</palyakerulete>
-            <palyaexcentricitasa>0,04839266</palyaexcentricitasa>
-            <sziderikuskeringesiido>4333,2867 nap (11,86 év)</sziderikuskeringesiido>
-            <szinodikusperiodus>398,88 nap</szinodikusperiodus>
-            <minpalyamentisebesség>12,446 km/s</minpalyamentisebesség>
-            <atlpalyamentisebesseg>13,056 km/s</atlpalyamentisebesseg>
-            <maxpalyamentisebesseg>13,712 km/s</maxpalyamentisebesseg>
-            <inklacio>1,30530° (6,09° a Nap egyenlítőjéhez képest)</inklacio>
-            <felszallocsomohossza>100,55615°</felszallocsomohossza>
-            <periheliumszoge></periheliumszoge>
-            <kozpontiegitest>nap</kozpontiegitest>
-            <holdak>79</holdak>
-        </palyaadatok>
-        <fizikai>
-            <felszin>Gáz</felszin>
-            <egyenlitoisugar>71 492 km</egyenlitoisugar>
-            <lapultsag>0,06487</lapultsag>
-            <felszinterulete>6,14 × 10^10 km²</felszinterulete>
-            <terfogat>1,431 × 10^15 km³</terfogat>
-            <tomeg>1,899 × 10^27 kg</tomeg>
-            <atlagossuruseg>1,326 g/cm³</atlagossuruseg>
-            <felszinigravitacio></felszinigravitacio>
-            <szokesisebesseg>59,54 km/s</szokesisebesseg>
-            <sziderikusforgasido>0,413538021 nap (9 h 55 min 29,685 s)</sziderikusforgasido>
-            <forgasisebesseg>45 300 km/h</forgasisebesseg>
-            <tengelyferdeseg>3,13°</tengelyferdeseg>
-            <eszakipolusrektaszcenzioja>268,05° (17 h 52 min 12 s)</eszakipolusrektaszcenzioja>
-            <deklinacio>64,49°</deklinacio>
-            <albedo>0,52</albedo>
-            <homerseklet>-163°C-tól -121°C-ig</homerseklet>
-        </fizikai>
+        <apheliumtavolsaga>816 081 455 km</apheliumtavolsaga>
+        <periheliumtavolsaga>740 742 598 km</periheliumtavolsaga>
+        <felnagytengely>778 412 027 km</felnagytengely>
+        <palyakerulete>4,888 Tm</palyakerulete>
+        <palyaexcentricitasa>0,04839266</palyaexcentricitasa>
+        <sziderikuskeringesiido>4333,2867 nap (11,86 év)</sziderikuskeringesiido>
+        <szinodikusperiodus>398,88 nap</szinodikusperiodus>
+        <minpalyamentisebesség>12,446 km/s</minpalyamentisebesség>
+        <atlpalyamentisebesseg>13,056 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>13,712 km/s</maxpalyamentisebesseg>
+        <inklacio>1,30530° (6,09° a Nap egyenlítőjéhez képest)</inklacio>
+        <felszallocsomohossza>100,55615°</felszallocsomohossza>
+        <periheliumszoge>-</periheliumszoge>
+        <kozpontiegitest>nap</kozpontiegitest>
+        <holdak>79</holdak>
+        <felszin>Gáz</felszin>
+        <egyenlitoisugar>71 492 km</egyenlitoisugar>
+        <lapultsag>0,06487</lapultsag>
+        <felszinterulete>6,14 × 10^10 km²</felszinterulete>
+        <terfogat>1,431 × 10^15 km³</terfogat>
+        <tomeg>1,899 × 10^27 kg</tomeg>
+        <atlagossuruseg>1,326 g/cm³</atlagossuruseg>
+        <felszinigravitacio>-</felszinigravitacio>
+        <szokesisebesseg>59,54 km/s</szokesisebesseg>
+        <sziderikusforgasido>0,413538021 nap (9 h 55 min 29,685 s)</sziderikusforgasido>
+        <forgasisebesseg>45 300 km/h</forgasisebesseg>
+        <tengelyferdeseg>3,13°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>268,05° (17 h 52 min 12 s)</eszakipolusrektaszcenzioja>
+        <deklinacio>64,49°</deklinacio>
+        <albedo>0,52</albedo>
+        <homerseklet>-163°C-tól -121°C-ig</homerseklet>
     </egitest>
     <egitest>
         <nev>Szaturnusz</nev>
-        <palyaadatok>
-            <apheliumtavolsaga>1 503 983 449 km</apheliumtavolsaga>
-            <periheliumtavolsaga>1 349 467 375 km</periheliumtavolsaga>
-            <felnagytengely>1433,4 millió km</felnagytengely>
-            <palyakerulete>8,958 Tm</palyakerulete>
-            <palyaexcentricitasa>0,05415</palyaexcentricitasa>
-            <sziderikuskeringesiido>10 756,1995 nap (29,46 év)</sziderikuskeringesiido>
-            <szinodikusperiodus>378,10 nap</szinodikusperiodus>
-            <minpalyamentisebesség>9,137 km/s</minpalyamentisebesség>
-            <atlpalyamentisebesseg>9,639 km/s</atlpalyamentisebesseg>
-            <maxpalyamentisebesseg>10,183 km/s</maxpalyamentisebesseg>
-            <inklacio>2,484 46° (5,51° a Nap egyenlítőjéhez képest)</inklacio>
-            <felszallocsomohossza>113,71532811 04°</felszallocsomohossza>
-            <periheliumszoge></periheliumszoge>
-            <kozpontiegitest>nap</kozpontiegitest>
-            <holdak>82</holdak>
-        </palyaadatok>
-        <fizikai>
-            <felszin>Gáz</felszin>
-            <egyenlitoisugar>60 268 km</egyenlitoisugar>
-            <lapultsag>0,09796</lapultsag>
-            <felszinterulete>4,27×10^10 km²</felszinterulete>
-            <terfogat>8,27×10^14 km³</terfogat>
-            <tomeg>	5,6846×10^26 kg</tomeg>
-            <atlagossuruseg>0,6873 g/cm³</atlagossuruseg>
-            <felszinigravitacio>8,96 m/s²</felszinigravitacio>
-            <szokesisebesseg>35,49 km/s</szokesisebesseg>
-            <sziderikusforgasido>0,440023 nap (10h 33m 38s +1m 52s −1m 19s)</sziderikusforgasido>
-            <forgasisebesseg>35 500 km/h</forgasisebesseg>
-            <tengelyferdeseg>26,73°</tengelyferdeseg>
-            <eszakipolusrektaszcenzioja>40,59° (2 h 42 min 21 s)</eszakipolusrektaszcenzioja>
-            <deklinacio>83,54°</deklinacio>
-            <albedo>0,47</albedo>
-            <homerseklet>átl: -180°C</homerseklet>
-        </fizikai>
+        <apheliumtavolsaga>1 503 983 449 km</apheliumtavolsaga>
+        <periheliumtavolsaga>1 349 467 375 km</periheliumtavolsaga>
+        <felnagytengely>1433,4 millió km</felnagytengely>
+        <palyakerulete>8,958 Tm</palyakerulete>
+        <palyaexcentricitasa>0,05415</palyaexcentricitasa>
+        <sziderikuskeringesiido>10 756,1995 nap (29,46 év)</sziderikuskeringesiido>
+        <szinodikusperiodus>378,10 nap</szinodikusperiodus>
+        <minpalyamentisebesség>9,137 km/s</minpalyamentisebesség>
+        <atlpalyamentisebesseg>9,639 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>10,183 km/s</maxpalyamentisebesseg>
+        <inklacio>2,484 46° (5,51° a Nap egyenlítőjéhez képest)</inklacio>
+        <felszallocsomohossza>113,71532811 04°</felszallocsomohossza>
+        <periheliumszoge>-</periheliumszoge>
+        <kozpontiegitest>nap</kozpontiegitest>
+        <holdak>82</holdak>
+        <felszin>Gáz</felszin>
+        <egyenlitoisugar>60 268 km</egyenlitoisugar>
+        <lapultsag>0,09796</lapultsag>
+        <felszinterulete>4,27×10^10 km²</felszinterulete>
+        <terfogat>8,27×10^14 km³</terfogat>
+        <tomeg>	5,6846×10^26 kg</tomeg>
+        <atlagossuruseg>0,6873 g/cm³</atlagossuruseg>
+        <felszinigravitacio>8,96 m/s²</felszinigravitacio>
+        <szokesisebesseg>35,49 km/s</szokesisebesseg>
+        <sziderikusforgasido>0,440023 nap (10h 33m 38s +1m 52s −1m 19s)</sziderikusforgasido>
+        <forgasisebesseg>35 500 km/h</forgasisebesseg>
+        <tengelyferdeseg>26,73°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>40,59° (2 h 42 min 21 s)</eszakipolusrektaszcenzioja>
+        <deklinacio>83,54°</deklinacio>
+        <albedo>0,47</albedo>
+        <homerseklet>átl: -180°C</homerseklet>
     </egitest>
     <egitest>
         <nev>Uránusz</nev>
-        <palyaadatok>
-            <apheliumtavolsaga>3 006 389 405 km</apheliumtavolsaga>
-            <periheliumtavolsaga>2 735 555 035 km</periheliumtavolsaga>
-            <felnagytengely>2 870 972 220 km</felnagytengely>
-            <palyakerulete>18,029 Tm</palyakerulete>
-            <palyaexcentricitasa>0,04716771</palyaexcentricitasa>
-            <sziderikuskeringesiido>30 707,4896 nap (84,07 év)</sziderikuskeringesiido>
-            <szinodikusperiodus>369,65 nap</szinodikusperiodus>
-            <minpalyamentisebesség>6,486 km/s</minpalyamentisebesség>
-            <atlpalyamentisebesseg>6,795 km/s</atlpalyamentisebesseg>
-            <maxpalyamentisebesseg>7,128 km/s</maxpalyamentisebesseg>
-            <inklacio>0,76986° (6,48° a Nap egyenlítőjéhez képest)</inklacio>
-            <felszallocsomohossza>74,22988°</felszallocsomohossza>
-            <periheliumszoge></periheliumszoge>
-            <kozpontiegitest>nap</kozpontiegitest>
-            <holdak>27</holdak>
-        </palyaadatok>
-        <fizikai>
-            <felszin>Gáz</felszin>
-            <egyenlitoisugar>25 559 km</egyenlitoisugar>
-            <lapultsag>0,0229</lapultsag>
-            <felszinterulete>8,084×10^9 km²</felszinterulete>
-            <terfogat>6,834×10^13 km³</terfogat>
-            <tomeg>8,6832×10^25 kg</tomeg>
-            <atlagossuruseg>1,318 g/cm³</atlagossuruseg>
-            <felszinigravitacio>8,869 m/s²</felszinigravitacio>
-            <szokesisebesseg>21,29 km/s</szokesisebesseg>
-            <sziderikusforgasido>‒0,71833 nap</sziderikusforgasido>
-            <forgasisebesseg>9320 km/h</forgasisebesseg>
-            <tengelyferdeseg>97,77°</tengelyferdeseg>
-            <eszakipolusrektaszcenzioja>77,31° (5 h 9 min 15 s)</eszakipolusrektaszcenzioja>
-            <deklinacio>+15,175°</deklinacio>
-            <albedo>0,51</albedo>
-            <homerseklet>átl: -210°C</homerseklet>
-        </fizikai>
+        <apheliumtavolsaga>3 006 389 405 km</apheliumtavolsaga>
+        <periheliumtavolsaga>2 735 555 035 km</periheliumtavolsaga>
+        <felnagytengely>2 870 972 220 km</felnagytengely>
+        <palyakerulete>18,029 Tm</palyakerulete>
+        <palyaexcentricitasa>0,04716771</palyaexcentricitasa>
+        <sziderikuskeringesiido>30 707,4896 nap (84,07 év)</sziderikuskeringesiido>
+        <szinodikusperiodus>369,65 nap</szinodikusperiodus>
+        <minpalyamentisebesség>6,486 km/s</minpalyamentisebesség>
+        <atlpalyamentisebesseg>6,795 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>7,128 km/s</maxpalyamentisebesseg>
+        <inklacio>0,76986° (6,48° a Nap egyenlítőjéhez képest)</inklacio>
+        <felszallocsomohossza>74,22988°</felszallocsomohossza>
+        <periheliumszoge>-</periheliumszoge>
+        <kozpontiegitest>nap</kozpontiegitest>
+        <holdak>27</holdak>
+        <felszin>Gáz</felszin>
+        <egyenlitoisugar>25 559 km</egyenlitoisugar>
+        <lapultsag>0,0229</lapultsag>
+        <felszinterulete>8,084×10^9 km²</felszinterulete>
+        <terfogat>6,834×10^13 km³</terfogat>
+        <tomeg>8,6832×10^25 kg</tomeg>
+        <atlagossuruseg>1,318 g/cm³</atlagossuruseg>
+        <felszinigravitacio>8,869 m/s²</felszinigravitacio>
+        <szokesisebesseg>21,29 km/s</szokesisebesseg>
+        <sziderikusforgasido>‒0,71833 nap</sziderikusforgasido>
+        <forgasisebesseg>9320 km/h</forgasisebesseg>
+        <tengelyferdeseg>97,77°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>77,31° (5 h 9 min 15 s)</eszakipolusrektaszcenzioja>
+        <deklinacio>+15,175°</deklinacio>
+        <albedo>0,51</albedo>
+        <homerseklet>átl: -210°C</homerseklet>
     </egitest>
     <egitest>
         <nev>Neptunusz</nev>
-        <palyaadatok>
-            <apheliumtavolsaga>4 536 874 325 km</apheliumtavolsaga>
-            <periheliumtavolsaga>4 459 631 496 km</periheliumtavolsaga>
-            <felnagytengely>4 498 252 900 km</felnagytengely>
-            <palyakerulete>28,263 Tm</palyakerulete>
-            <palyaexcentricitasa>0,00858587</palyaexcentricitasa>
-            <sziderikuskeringesiido>60 223,3528 nap (164,88 év)</sziderikuskeringesiido>
-            <szinodikusperiodus>367,49 nap</szinodikusperiodus>
-            <minpalyamentisebesség>5,385 km/s</minpalyamentisebesség>
-            <atlpalyamentisebesseg>5,432 km/s</atlpalyamentisebesseg>
-            <maxpalyamentisebesseg>5,479 km/s</maxpalyamentisebesseg>
-            <inklacio>1,76917° (6,43° a Nap egyenlítőjéhez képest)</inklacio>
-            <felszallocsomohossza>131,72169°</felszallocsomohossza>
-            <periheliumszoge></periheliumszoge>
-            <kozpontiegitest>nap</kozpontiegitest>
-            <holdak>14</holdak>
-        </palyaadatok>
-        <fizikai>
-            <felszin>Gáz</felszin>
-            <egyenlitoisugar>24 764 km</egyenlitoisugar>
-            <lapultsag>0,0171</lapultsag>
-            <felszinterulete>7,619×10^9 km²</felszinterulete>
-            <terfogat>6,254×10^13 km³</terfogat>
-            <tomeg>1,0243×10^26 kg</tomeg>
-            <atlagossuruseg>1,638 g/cm³</atlagossuruseg>
-            <felszinigravitacio>11,15 m/s²</felszinigravitacio>
-            <szokesisebesseg>23,5 km/s</szokesisebesseg>
-            <sziderikusforgasido>15,9663 óra (15 h 57 min 59 s)</sziderikusforgasido>
-            <forgasisebesseg>9750 km/h</forgasisebesseg>
-            <tengelyferdeseg>28,32°</tengelyferdeseg>
-            <eszakipolusrektaszcenzioja>299,33° (19 h 57 min 20 s)</eszakipolusrektaszcenzioja>
-            <deklinacio>42,95°</deklinacio>
-            <albedo>0,41</albedo>
-            <homerseklet>átl: -220°C</homerseklet>
-        </fizikai>
+        <apheliumtavolsaga>4 536 874 325 km</apheliumtavolsaga>
+        <periheliumtavolsaga>4 459 631 496 km</periheliumtavolsaga>
+        <felnagytengely>4 498 252 900 km</felnagytengely>
+        <palyakerulete>28,263 Tm</palyakerulete>
+        <palyaexcentricitasa>0,00858587</palyaexcentricitasa>
+        <sziderikuskeringesiido>60 223,3528 nap (164,88 év)</sziderikuskeringesiido>
+        <szinodikusperiodus>367,49 nap</szinodikusperiodus>
+        <minpalyamentisebesség>5,385 km/s</minpalyamentisebesség>
+        <atlpalyamentisebesseg>5,432 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>5,479 km/s</maxpalyamentisebesseg>
+        <inklacio>1,76917° (6,43° a Nap egyenlítőjéhez képest)</inklacio>
+        <felszallocsomohossza>131,72169°</felszallocsomohossza>
+        <periheliumszoge>-</periheliumszoge>
+        <kozpontiegitest>nap</kozpontiegitest>
+        <holdak>14</holdak>
+        <felszin>Gáz</felszin>
+        <egyenlitoisugar>24 764 km</egyenlitoisugar>
+        <lapultsag>0,0171</lapultsag>
+        <felszinterulete>7,619×10^9 km²</felszinterulete>
+        <terfogat>6,254×10^13 km³</terfogat>
+        <tomeg>1,0243×10^26 kg</tomeg>
+        <atlagossuruseg>1,638 g/cm³</atlagossuruseg>
+        <felszinigravitacio>11,15 m/s²</felszinigravitacio>
+        <szokesisebesseg>23,5 km/s</szokesisebesseg>
+        <sziderikusforgasido>15,9663 óra (15 h 57 min 59 s)</sziderikusforgasido>
+        <forgasisebesseg>9750 km/h</forgasisebesseg>
+        <tengelyferdeseg>28,32°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>299,33° (19 h 57 min 20 s)</eszakipolusrektaszcenzioja>
+        <deklinacio>42,95°</deklinacio>
+        <albedo>0,41</albedo>
+        <homerseklet>átl: -220°C</homerseklet>
+    </egitest>
+    <egitest>
+        <nev>Plútó</nev>
+        <apheliumtavolsaga>7 375 927 931 km</apheliumtavolsaga>
+        <periheliumtavolsaga>4 436 824 613 km</periheliumtavolsaga>
+        <felnagytengely>5 906 376 272 km</felnagytengely>
+        <palyakerulete>36,530 Tm</palyakerulete>
+        <palyaexcentricitasa>0,24880766</palyaexcentricitasa>
+        <sziderikuskeringesiido>90 613,3055 nap (248,09 év)</sziderikuskeringesiido>
+        <szinodikusperiodus>366,73 nap</szinodikusperiodus>
+        <minpalyamentisebesség>3,676 km/s</minpalyamentisebesség>
+        <atlpalyamentisebesseg>4,666 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>6,112 km/s</maxpalyamentisebesseg>
+        <inklacio>17,141 75° (11,88° a Nap egyenlítőjéhez képest)</inklacio>
+        <felszallocsomohossza>110,303 47°</felszallocsomohossza>
+        <periheliumszoge>113,763 29°</periheliumszoge>
+        <kozpontiegitest>Nap</kozpontiegitest>
+        <holdak>5</holdak>
+        <felszin>kőzet</felszin>
+        <egyenlitoisugar>1185 km</egyenlitoisugar>
+        <lapultsag>-</lapultsag>
+        <felszinterulete>1,795·107 km² (a földi 0,033-szerese)</felszinterulete>
+        <terfogat>7,15·109 km³ (a földi 0,0066-szerese)</terfogat>
+        <tomeg>(1,305±0,007)·1022 kg (a földi 0,0021-szerese)</tomeg>
+        <atlagossuruseg>2,03±0,06 g/cm³</atlagossuruseg>
+        <felszinigravitacio>0,58 m/s² (0,059 g)</felszinigravitacio>
+        <szokesisebesseg>1,2 km/s</szokesisebesseg>
+        <sziderikusforgasido>-6,387230 nap (6 nap 9 h 17 m 36 s)</sziderikusforgasido>
+        <forgasisebesseg>47,18 km/h (az egyenlítőnél)</forgasisebesseg>
+        <tengelyferdeseg>119,59°</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>133,045±0,02°</eszakipolusrektaszcenzioja>
+        <deklinacio>-6,145±0,02°</deklinacio>
+        <albedo>0,49–0,66 (35%-kal változik) </albedo>
+        <homerseklet>átl. -229.15 °C</homerseklet>
+    </egitest>
+    <egitest>
+        <nev>Haumea</nev>
+        <apheliumtavolsaga>7,71 Tm</apheliumtavolsaga>
+        <periheliumtavolsaga>5,194 Tm</periheliumtavolsaga>
+        <felnagytengely>43,335 CsE</felnagytengely>
+        <palyakerulete>-</palyakerulete>
+        <palyaexcentricitasa>0,18874</palyaexcentricitasa>
+        <sziderikuskeringesiido>285,4 év</sziderikuskeringesiido>
+        <szinodikusperiodus>306,74 év</szinodikusperiodus>
+        <minpalyamentisebesség>-</minpalyamentisebesség>
+        <atlpalyamentisebesseg>-</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>-</maxpalyamentisebesseg>
+        <inklacio>28,22°</inklacio>
+        <felszallocsomohossza>79,489°</felszallocsomohossza>
+        <periheliumszoge>239,18°</periheliumszoge>
+        <kozpontiegitest>Nap</kozpontiegitest>
+        <holdak>2</holdak>
+        <felszin>kőzet</felszin>
+        <egyenlitoisugar>~750 km</egyenlitoisugar>
+        <lapultsag>-</lapultsag>
+        <felszinterulete>2*10^7 km²</felszinterulete>
+        <terfogat>-</terfogat>
+        <tomeg>(4,006 ± 0,040)·10^21 kg</tomeg>
+        <atlagossuruseg>2,6–3,3 g/cm³</atlagossuruseg>
+        <felszinigravitacio>0,44 m/s²</felszinigravitacio>
+        <szokesisebesseg>0,84 km/s²</szokesisebesseg>
+        <sziderikusforgasido>0,163 146 ± 0,000 004 d (3,915 5 ± 0,000 1 h)</sziderikusforgasido>
+        <forgasisebesseg>-</forgasisebesseg>
+        <tengelyferdeseg>-</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>-</eszakipolusrektaszcenzioja>
+        <deklinacio>-</deklinacio>
+        <albedo>-</albedo>
+        <homerseklet>-</homerseklet>
+    </egitest>
+    <egitest>
+        <nev>Eris</nev>
+        <apheliumtavolsaga>14,60*10^9 km</apheliumtavolsaga>
+        <periheliumtavolsaga>5,65*10^9 km</periheliumtavolsaga>
+        <felnagytengely>10,12*10^9 km</felnagytengely>
+        <palyakerulete>-</palyakerulete>
+        <palyaexcentricitasa>0,441 77</palyaexcentricitasa>
+        <sziderikuskeringesiido>203 600 nap 557 év</sziderikuskeringesiido>
+        <szinodikusperiodus>-</szinodikusperiodus>
+        <minpalyamentisebesség>-</minpalyamentisebesség>
+        <atlpalyamentisebesseg>3,436 km/s</atlpalyamentisebesseg>
+        <maxpalyamentisebesseg>-</maxpalyamentisebesseg>
+        <inklacio>44,187°</inklacio>
+        <felszallocsomohossza>35,869 6°</felszallocsomohossza>
+        <periheliumszoge>151,430 5°</periheliumszoge>
+        <kozpontiegitest>Nap</kozpontiegitest>
+        <holdak>1</holdak>
+        <felszin>kőzet</felszin>
+        <egyenlitoisugar>1163±6km</egyenlitoisugar>
+        <lapultsag>-</lapultsag>
+        <felszinterulete>-</felszinterulete>
+        <terfogat>-</terfogat>
+        <tomeg>(1,67±0,02)·1022 kg</tomeg>
+        <atlagossuruseg>-</atlagossuruseg>
+        <felszinigravitacio>~0,8 m/s²</felszinigravitacio>
+        <szokesisebesseg>-</szokesisebesseg>
+        <sziderikusforgasido>8 h</sziderikusforgasido>
+        <forgasisebesseg>-</forgasisebesseg>
+        <tengelyferdeseg>-</tengelyferdeseg>
+        <eszakipolusrektaszcenzioja>-</eszakipolusrektaszcenzioja>
+        <deklinacio>-</deklinacio>
+        <albedo>0,86 ± 0,07</albedo>
+        <homerseklet>átl. -230,65 °C</homerseklet>
     </egitest>
 </naprendszer>

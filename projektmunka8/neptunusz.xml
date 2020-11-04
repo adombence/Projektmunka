@@ -1,42 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://www.adombence.hu/projektmunka8/teszt.xsl" type="text/xsl"?>
 
-<naprendszer>
-    <egitest>
-        <nev>Neptunusz</nev>
-        <palyaadatok>
-            <apheliumtavolsaga>4 536 874 325 km</apheliumtavolsaga>
-            <periheliumtavolsaga>4 459 631 496 km</periheliumtavolsaga>
-            <felnagytengely>4 498 252 900 km</felnagytengely>
-            <palyakerulete>28,263 Tm</palyakerulete>
-            <palyaexcentricitasa>0,00858587</palyaexcentricitasa>
-            <sziderikuskeringesiido>60 223,3528 nap (164,88 év)</sziderikuskeringesiido>
-            <szinodikusperiodus>367,49 nap</szinodikusperiodus>
-            <minpalyamentisebesség>5,385 km/s</minpalyamentisebesség>
-            <atlpalyamentisebesseg>5,432 km/s</atlpalyamentisebesseg>
-            <maxpalyamentisebesseg>5,479 km/s</maxpalyamentisebesseg>
-            <inklacio>1,76917° (6,43° a Nap egyenlítőjéhez képest)</inklacio>
-            <felszallocsomohossza>131,72169°</felszallocsomohossza>
-            <periheliumszoge></periheliumszoge>
-            <kozpontiegitest>nap</kozpontiegitest>
-            <holdak>14</holdak>
-        </palyaadatok>
-        <fizikai>
-            <felszin>Gáz</felszin>
-            <egyenlitoisugar>24 764 km</egyenlitoisugar>
-            <lapultsag>0,0171</lapultsag>
-            <felszinterulete>7,619×10^9 km²</felszinterulete>
-            <terfogat>6,254×10^13 km³</terfogat>
-            <tomeg>1,0243×10^26 kg</tomeg>
-            <atlagossuruseg>1,638 g/cm³</atlagossuruseg>
-            <felszinigravitacio>11,15 m/s²</felszinigravitacio>
-            <szokesisebesseg>23,5 km/s</szokesisebesseg>
-            <sziderikusforgasido>15,9663 óra (15 h 57 min 59 s)</sziderikusforgasido>
-            <forgasisebesseg>9750 km/h</forgasisebesseg>
-            <tengelyferdeseg>28,32°</tengelyferdeseg>
-            <eszakipolusrektaszcenzioja>299,33° (19 h 57 min 20 s)</eszakipolusrektaszcenzioja>
-            <deklinacio>42,95°</deklinacio>
-            <albedo>0,41</albedo>
-            <homerseklet>átl: -220°C</homerseklet>
-        </fizikai>
-    </egitest>
-</naprendszer>
+<egitest>
+    <nev>Neptunusz</nev>
+    <apheliumtavolsaga>4 536 874 325 km</apheliumtavolsaga>
+    <periheliumtavolsaga>4 459 631 496 km</periheliumtavolsaga>
+    <felnagytengely>4 498 252 900 km</felnagytengely>
+    <palyakerulete>28,263 Tm</palyakerulete>
+    <palyaexcentricitasa>0,00858587</palyaexcentricitasa>
+    <sziderikuskeringesiido>60 223,3528 nap (164,88 év)</sziderikuskeringesiido>
+    <szinodikusperiodus>367,49 nap</szinodikusperiodus>
+    <minpalyamentisebesség>5,385 km/s</minpalyamentisebesség>
+    <atlpalyamentisebesseg>5,432 km/s</atlpalyamentisebesseg>
+    <maxpalyamentisebesseg>5,479 km/s</maxpalyamentisebesseg>
+    <inklacio>1,76917° (6,43° a Nap egyenlítőjéhez képest)</inklacio>
+    <felszallocsomohossza>131,72169°</felszallocsomohossza>
+    <periheliumszoge></periheliumszoge>
+    <kozpontiegitest>nap</kozpontiegitest>
+    <holdak>14</holdak>
+    <felszin>Gáz</felszin>
+    <egyenlitoisugar>24 764 km</egyenlitoisugar>
+    <lapultsag>0,0171</lapultsag>
+    <felszinterulete>7,619×10^9 km²</felszinterulete>
+    <terfogat>6,254×10^13 km³</terfogat>
+    <tomeg>1,0243×10^26 kg</tomeg>
+    <atlagossuruseg>1,638 g/cm³</atlagossuruseg>
+    <felszinigravitacio>11,15 m/s²</felszinigravitacio>
+    <szokesisebesseg>23,5 km/s</szokesisebesseg>
+    <sziderikusforgasido>15,9663 óra (15 h 57 min 59 s)</sziderikusforgasido>
+    <forgasisebesseg>9750 km/h</forgasisebesseg>
+    <tengelyferdeseg>28,32°</tengelyferdeseg>
+    <eszakipolusrektaszcenzioja>299,33° (19 h 57 min 20 s)</eszakipolusrektaszcenzioja>
+    <deklinacio>42,95°</deklinacio>
+    <albedo>0,41</albedo>
+    <homerseklet>átl: -220°C</homerseklet>
+</egitest>
