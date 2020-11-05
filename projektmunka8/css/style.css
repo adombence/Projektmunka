@@ -144,6 +144,14 @@ th {
     padding: 8px;
 }
 
+.tablazat1 tr{
+    line-height: 20px;
+}
+
+.tablazat2 tr{
+    line-height: 20px;
+}
+
 /*páros sorok*/
 tr:nth-child(even) {
     background-color: #dddddd;
