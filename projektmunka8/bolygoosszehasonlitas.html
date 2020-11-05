@@ -89,93 +89,104 @@
             console.log(Planet2Name);
             console.log(Planet2Val);
 
-            loadDoc(Planet1Val, "tablazat1");
-            loadDoc(Planet2Val, "tablazat2");
+            loadDoc(Planet1Val, "tablazat1", Planet1Name);
+            loadDoc(Planet2Val, "tablazat2", Planet2Name);
         }
 
-        function loadDoc(PV, tab) {
+        function loadDoc(PV, tab, nam) {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
-                    myFunction(this, tab);
+                    myFunction(this, tab, nam);
                 }
             };
-            xhttp.open("GET", "xml/" + PV, true);
+            xhttp.open("GET", "xml/naprendszer.xml", true);
             xhttp.send();
         }
 
-        function myFunction(xml, tab) {
-            var i;
+        function myFunction(xml, tab, nam) {
+            var i, Seged;
             var xmlDoc = xml.responseXML;
             var table = " ";
             var x = xmlDoc.getElementsByTagName("egitest");
+            /*
+                for ciklusban megkeresni azt az elemet, ahol a "x[i].getElementsByTagName("nev")[0].childNodes[0].nodeValue == a válaszott égitest neve"
+                Seged = i;
+                x[Seged].getElementsByTagName("nev")[0].childNodes[0].nodeValue
+            */
             for (i = 0; i < x.length; i++) {
-                table += "<tr><th>Név</th><td>" +
-                    x[i].getElementsByTagName("nev")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Aphélium távolsága</th><td>" +
-                    x[i].getElementsByTagName("apheliumtavolsaga")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Perihélium távolsága</th><td>" +
-                    x[i].getElementsByTagName("periheliumtavolsaga")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Fél nagytengely</th><td>" +
-                    x[i].getElementsByTagName("felnagytengely")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Pálya kerülete</th><td>" +
-                    x[i].getElementsByTagName("palyakerulete")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Pálya excentritása</th><td>" +
-                    x[i].getElementsByTagName("palyaexcentricitasa")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Sziderikus keringési idő</th><td>" +
-                    x[i].getElementsByTagName("sziderikuskeringesiido")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Szinodikusperiodus</th><td>" +
-                    x[i].getElementsByTagName("szinodikusperiodus")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Min. pályamenti sebesség</th><td>" +
-                    x[i].getElementsByTagName("minpalyamentisebesség")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Átl. pályamenti sebesség</th><td>" +
-                    x[i].getElementsByTagName("atlpalyamentisebesseg")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Max. pályamenti sebesség</th><td>" +
-                    x[i].getElementsByTagName("maxpalyamentisebesseg")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Inkláció</th><td>" +
-                    x[i].getElementsByTagName("inklacio")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Felszálló csomó hossza</th><td>" +
-                    x[i].getElementsByTagName("felszallocsomohossza")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Perihélium szöge</th><td>" +
-                    x[i].getElementsByTagName("periheliumszoge")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Központi égitest</th><td>" +
-                    x[i].getElementsByTagName("kozpontiegitest")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Holdak</th><td>" +
-                    x[i].getElementsByTagName("holdak")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>felszin</th><td>" +
-                    x[i].getElementsByTagName("felszin")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Egyenlítő sugár</th><td>" +
-                    x[i].getElementsByTagName("egyenlitoisugar")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Lapultság</th><td>" +
-                    x[i].getElementsByTagName("lapultsag")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Felszín területe</th><td>" +
-                    x[i].getElementsByTagName("felszinterulete")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Térfogat</th><td>" +
-                    x[i].getElementsByTagName("terfogat")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Tömeg</th><td>" +
-                    x[i].getElementsByTagName("tomeg")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Átlagos sűrűség</th><td>" +
-                    x[i].getElementsByTagName("atlagossuruseg")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Felszíni gravitáció</th><td>" +
-                    x[i].getElementsByTagName("felszinigravitacio")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Szökési sebesség</th><td>" +
-                    x[i].getElementsByTagName("szokesisebesseg")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Sziderikus forgás idő</th><td>" +
-                    x[i].getElementsByTagName("sziderikusforgasido")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Forgási sebesség</th><td>" +
-                    x[i].getElementsByTagName("forgasisebesseg")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Tengelyferdeség</th><td>" +
-                    x[i].getElementsByTagName("tengelyferdeseg")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Az északi pólus rektaszcenziója</th><td>" +
-                    x[i].getElementsByTagName("eszakipolusrektaszcenzioja")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Deklináció</th><td>" +
-                    x[i].getElementsByTagName("deklinacio")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Albedó</th><td>" +
-                    x[i].getElementsByTagName("albedo")[0].childNodes[0].nodeValue +
-                    "</td></tr><tr><th>Hőmérséklet</th><td>" +
-                    x[i].getElementsByTagName("homerseklet")[0].childNodes[0].nodeValue +
-                    "</td></tr>";
+                if (x[i].getElementsByTagName("nev")[0].childNodes[0].nodeValue == nam) {
+                    Seged = i;
+                    console.log(Seged);
+                    console.log(x[i].getElementsByTagName("nev")[0].childNodes[0].nodeValue);
+                }
             }
+
+            table += "<tr><th>Név</th><td>" +
+                x[Seged].getElementsByTagName("nev")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Aphélium távolsága</th><td>" +
+                x[Seged].getElementsByTagName("apheliumtavolsaga")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Perihélium távolsága</th><td>" +
+                x[Seged].getElementsByTagName("periheliumtavolsaga")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Fél nagytengely</th><td>" +
+                x[Seged].getElementsByTagName("felnagytengely")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Pálya kerülete</th><td>" +
+                x[Seged].getElementsByTagName("palyakerulete")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Pálya excentritása</th><td>" +
+                x[Seged].getElementsByTagName("palyaexcentricitasa")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Sziderikus keringési idő</th><td>" +
+                x[Seged].getElementsByTagName("sziderikuskeringesiido")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Szinodikusperiodus</th><td>" +
+                x[Seged].getElementsByTagName("szinodikusperiodus")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Min. pályamenti sebesség</th><td>" +
+                x[Seged].getElementsByTagName("minpalyamentisebesség")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Átl. pályamenti sebesség</th><td>" +
+                x[Seged].getElementsByTagName("atlpalyamentisebesseg")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Max. pályamenti sebesség</th><td>" +
+                x[Seged].getElementsByTagName("maxpalyamentisebesseg")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Inkláció</th><td>" +
+                x[Seged].getElementsByTagName("inklacio")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Felszálló csomó hossza</th><td>" +
+                x[Seged].getElementsByTagName("felszallocsomohossza")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Perihélium szöge</th><td>" +
+                x[Seged].getElementsByTagName("periheliumszoge")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Központi égitest</th><td>" +
+                x[Seged].getElementsByTagName("kozpontiegitest")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Holdak</th><td>" +
+                x[Seged].getElementsByTagName("holdak")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>felszin</th><td>" +
+                x[Seged].getElementsByTagName("felszin")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Egyenlítő sugár</th><td>" +
+                x[Seged].getElementsByTagName("egyenlitoisugar")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Lapultság</th><td>" +
+                x[Seged].getElementsByTagName("lapultsag")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Felszín területe</th><td>" +
+                x[Seged].getElementsByTagName("felszinterulete")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Térfogat</th><td>" +
+                x[Seged].getElementsByTagName("terfogat")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Tömeg</th><td>" +
+                x[Seged].getElementsByTagName("tomeg")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Átlagos sűrűség</th><td>" +
+                x[Seged].getElementsByTagName("atlagossuruseg")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Felszíni gravitáció</th><td>" +
+                x[Seged].getElementsByTagName("felszinigravitacio")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Szökési sebesség</th><td>" +
+                x[Seged].getElementsByTagName("szokesisebesseg")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Sziderikus forgás idő</th><td>" +
+                x[Seged].getElementsByTagName("sziderikusforgasido")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Forgási sebesség</th><td>" +
+                x[Seged].getElementsByTagName("forgasisebesseg")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Tengelyferdeség</th><td>" +
+                x[Seged].getElementsByTagName("tengelyferdeseg")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Az északi pólus rektaszcenziója</th><td>" +
+                x[Seged].getElementsByTagName("eszakipolusrektaszcenzioja")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Deklináció</th><td>" +
+                x[Seged].getElementsByTagName("deklinacio")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Albedó</th><td>" +
+                x[Seged].getElementsByTagName("albedo")[0].childNodes[0].nodeValue +
+                "</td></tr><tr><th>Hőmérséklet</th><td>" +
+                x[Seged].getElementsByTagName("homerseklet")[0].childNodes[0].nodeValue +
+                "</td></tr>";
             document.getElementById(tab).innerHTML = table;
         }
     </script>
