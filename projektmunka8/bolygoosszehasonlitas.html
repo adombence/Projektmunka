@@ -98,8 +98,6 @@
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     myFunction(this, tab);
-                } else {
-                    console.log("error");
                 }
             };
             xhttp.open("GET", "xml/" + PV, true);
