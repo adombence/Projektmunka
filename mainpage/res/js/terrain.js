@@ -57,7 +57,7 @@ function draw() {
 
   //translate(width/2, height/2+50);
   rotateX(PI / 3);
-  //frameRate(60);
+  frameRate(30);
   translate(-w / 2, -h / 2);
 
   for (let y = 0; y < rows - 1; y++) {
