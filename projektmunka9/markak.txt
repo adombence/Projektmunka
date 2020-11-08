@@ -1,0 +1,13 @@
+-------------------------
+- Gyártó
+    - Név: Dr. Ing. h.c. F. Porsche Aktiengesellschaf (Porsche AG);
+    - Alapító: Ferdinand Porsche;
+    - Alapítva: 1931. 04. 25;
+- Székhely:
+    - Ország: Németország;
+    - Város: Stuttgart;
+- modell:
+    - név: Porsche 911;
+        - gyártási év: 1963;
+        - eladott darabszám: ?;
+-------------------------
