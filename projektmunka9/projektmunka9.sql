@@ -1,12 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.8.3
--- https://www.phpmyadmin.net/
---
--- Gép: mysql.omega:3306
--- Létrehozás ideje: 2020. Nov 17. 12:50
--- Kiszolgáló verziója: 5.7.32-log
--- PHP verzió: 5.6.40
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
