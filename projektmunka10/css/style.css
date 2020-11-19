@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto Mono");
+
+
+* {
+    /*box-sizing: border-box;*/
+    font-family: 'Roboto Mono';
+}
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
