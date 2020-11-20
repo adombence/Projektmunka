@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto Mono");
+
+/*
+ * Colors:
+ *
+ * primary dark: #2C2F33
+ * secondary dark:  #23272A
+ * font color on dark: #ffffff
+ * primary light: #f1f1f1
+ * secondary light: #f5f5f5
+ * font color on light: #000000
+ * active: #FF5252
+ * error:  #B00020
+ * succes: #FFDE03
+*/
+
+* {
+    /*box-sizing: border-box;*/
+    font-family: 'Roboto Mono';
+}
+
+body {
+    background-color: #2C2F33;
+    color: #ffffff;
+}
+
+
+/*navbar és egyéb linkek*/
+.nav a {
+    float: left;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a {
+    float: left;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav a:hover {}
+
+a:hover {
+    border-bottom: 1.5px solid #ffffff;
+    /* or whatever colour you'd prefer */
+    /*outline: 3px solid black;*/
+}
+
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: #f1f1f1;
+        color: black;
+    }
+}
