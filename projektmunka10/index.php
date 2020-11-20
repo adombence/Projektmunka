@@ -1,5 +1,5 @@
 <?php
-require('php/db.php');
+//require('php/db.php');
 ?>
 
 <!DOCTYPE html>
@@ -13,12 +13,12 @@ require('php/db.php');
 </head>
 
 <body>
-    <nav>
+    <div class="nav">
         <a href="#">Főoldal</a>
-    </nav>
-    <h1>Projektmunka10</h1>
+    </div>
+
     <grid>
-    
+
     </grid>
 </body>
 
