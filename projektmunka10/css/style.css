@@ -20,8 +20,41 @@
 }
 
 body {
-    background-color: #212121;
-    color: #f1f1f1;
+    background-color: #2C2F33;
+    color: #ffffff;
+}
+
+
+/*navbar és egyéb linkek*/
+.nav a {
+    float: left;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a {
+    float: left;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav a:hover {}
+
+a:hover {
+    border-bottom: 1.5px solid #ffffff;
+    /* or whatever colour you'd prefer */
+    /*outline: 3px solid black;*/
 }
 
 @media screen and (prefers-color-scheme: light) {
