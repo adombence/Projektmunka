@@ -20,6 +20,7 @@ require('php/db.php');
     <div class="autok">
         <div class="auto">
             <a href="http://adombence.hu/projektmunka10/markak.php?marka=Seat">Seat</a>
+            <img src="../img/seat.svg" alt="seat" srcset="https://www.adombence.hu/projektmunka10/img/seat.svg">
         </div>
         <div class="auto">
         <a href="http://adombence.hu/projektmunka10/markak.php?marka=Fiat">Fiat</a>
