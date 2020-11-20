@@ -1,5 +1,5 @@
 <?php
-//require('php/db.php');
+require('php/db.php');
 ?>
 
 <!DOCTYPE html>
@@ -17,9 +17,38 @@
         <a href="#">Főoldal</a>
     </div>
 
-    <grid>
-
-    </grid>
+    <div class="autok">
+        <div class="auto">
+            <a href="http://adombence.hu/projektmunka10/markak.php?marka=Seat">Seat</a>
+        </div>
+        <div class="auto">
+        <a href="http://adombence.hu/projektmunka10/markak.php?marka=Fiat">Fiat</a>
+        </div>
+        <div class="auto">
+        <a href="http://adombence.hu/projektmunka10/markak.php?marka=Renault">Renault</a>
+        </div>
+        <div class="auto">
+        <a href="http://adombence.hu/projektmunka10/markak.php?marka=Opel">Opel</a>
+        </div>
+        <div class="auto">
+        <a href="http://adombence.hu/projektmunka10/markak.php?marka=Suzuki">Suzuki</a>
+        </div>
+        <div class="auto">
+        <a href="http://adombence.hu/projektmunka10/markak.php?marka=Honda">Honda</a>
+        </div>
+        <div class="auto">
+        <a href="http://adombence.hu/projektmunka10/markak.php?marka=Toyota">Toyota</a>
+        </div>
+        <div class="auto">
+        <a href="http://adombence.hu/projektmunka10/markak.php?marka=Volkswagen">Volkswagen</a>
+        </div>
+        <div class="auto">
+        <a href="http://adombence.hu/projektmunka10/markak.php?marka=Chevrolet">Chevrolet</a>
+        </div>
+        <div class="auto">
+        <a href="http://adombence.hu/projektmunka10/markak.php?marka=Nissan">Nissan</a>
+        </div>
+    </div>
 </body>
 
 </html>
