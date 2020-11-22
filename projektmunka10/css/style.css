@@ -15,7 +15,7 @@
 */
 
 * {
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     font-family: 'Roboto Mono';
     /*font-size: 30px;*/
 }
@@ -23,6 +23,8 @@
 body {
     background-color: #23272A;
     color: #ffffff;
+    margin: 0%;
+    padding: 0%;
 }
 
 
@@ -69,7 +71,6 @@ a:hover {
 }
 
 .auto {
-    
     width: auto;
     height: 200px;
     font-size: 50px !important;
@@ -81,8 +82,57 @@ a:hover {
     justify-content: space-between;
     border-radius: 10px;
     background-color: #2C2F33;
-    padding-left: auto;
-    padding-right: auto;
+}
+
+.header {
+    padding: 50px;
+    text-align: center;
+    height: 250px;
+    background-color: #23272A;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    background-color: #2C2F33;
+    padding: 20px;
+}
+
+.main {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    background-color: #f1f1f1;
+    color: black !important;
+    padding: 20px;
+}
+
+.full {
+    -ms-flex: 100%;
+    /* IE10 */
+    flex: 100%;
+    background-color: #23272A;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+    color: black !important;
 }
 
 @media screen and (prefers-color-scheme: light) {
