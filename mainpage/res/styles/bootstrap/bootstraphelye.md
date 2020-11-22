@@ -1,0 +1,1 @@
+ide kell rakni a bootstrapot.
