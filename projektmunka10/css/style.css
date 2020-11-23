@@ -107,7 +107,20 @@ a:hover {
     /* IE10 */
     flex: 50%;
     background-color: #2C2F33;
+    color: #f1f1f1 !important;
+    text-align: center;
     padding: 20px;
+}
+
+.side2 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    background-color: #f1f1f1;
+    color: black !important;
+    text-align: center;
+    padding: 20px;
+    height: 250px;
 }
 
 .main {
@@ -116,23 +129,82 @@ a:hover {
     flex: 50%;
     background-color: #f1f1f1;
     color: black !important;
+    text-align: center;
     padding: 20px;
+}
+
+.main2 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    background-color: #2C2F33;
+    color: #f1f1f1 !important;
+    text-align: center;
+    padding: 20px;
+    height: 250px;
 }
 
 .full {
     -ms-flex: 100%;
     /* IE10 */
     flex: 100%;
-    background-color: #23272A;
+    background-color: #f1f1f1;
+    color: black !important;
+    text-align: center;
+}
+
+.full2 {
+    -ms-flex: 100%;
+    /* IE10 */
+    flex: 100%;
+    background-color: #FF5252;
+    color: black !important;
     padding: 20px;
     text-align: center;
+    height: 250px;
 }
 
 .footer {
     padding: 20px;
     text-align: center;
-    background-color: #ddd;
-    color: black !important;
+    background-color: #23272A;
+    color: #f1f1f1 !important;
+}
+
+.table {
+    font-family: 'Roboto Mono';
+    border-collapse: collapse;
+    font-size: 30px;
+    width: 100%;
+}
+
+.table1,
+.table2 {
+    font-family: 'Roboto Mono';
+    border-collapse: collapse;
+    font-size: 30px;
+    width: 100%;
+}
+
+.table1 td,
+.table1 th,
+.table2 td,
+.table2 th {
+    border: 0px;
+    text-align: left;
+    padding: 8px;
+}
+
+.table td,
+.table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    /*páros sorok*/
+    background-color: #dddddd;
 }
 
 @media screen and (prefers-color-scheme: light) {
