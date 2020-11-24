@@ -26,7 +26,10 @@ $result = $conn->query($markaAdatok) or die($conn->error);
     <div class="header">
         <h1 id="gyarto"></h1>
     </div>
-
+    <div class="nav">
+        <a href="./index.html">Főoldal</a>
+        <a href="./osszehasonlitas.php" class="ossszehasonlitas">Összehasonlítás</a>
+    </div>
     <div class="row">
         <div class="side">
             <h1>Gyártó adatok</h1>
@@ -71,6 +74,7 @@ $result = $conn->query($markaAdatok) or die($conn->error);
             </table>
         </div>
     </div>
+
     <div class="row">
         <div class="side2">
             <h1>Legkevesebbet eladott autó</h1>
@@ -80,9 +84,10 @@ $result = $conn->query($markaAdatok) or die($conn->error);
             $result = $conn->query($legkevesebbetEladott) or die($conn->error);
             $rows = $result->fetch_assoc();
             ?>
-            <h2><?php echo $rows['modellNev'] ?>:</h2>
-            <h2><?php echo $rows['eladottDarabszam'] ?> darab</h2>
+            <h3><?php echo $rows['modellNev'] ?>:</h3>
+            <h3><?php echo $rows['eladottDarabszam'] ?> darab</h3>
         </div>
+
         <div class="main2">
             <h1>Legtöbbet eladott autó</h1>
             <?php
@@ -91,11 +96,12 @@ $result = $conn->query($markaAdatok) or die($conn->error);
             $result = $conn->query($legtobbetEladott) or die($conn->error);
             $rows = $result->fetch_assoc();
             ?>
-            <h2><?php echo $rows['modellNev'] ?>:</h2>
-            <h2><?php echo $rows['eladottDarabszam'] ?> darab</h2>
+            <h3><?php echo $rows['modellNev'] ?>:</h3>
+            <h3><?php echo $rows['eladottDarabszam'] ?> darab</h3>
 
         </div>
     </div>
+
     <div class="row">
         <div class="full2">
             <h1>Összes eladott autó</h1>
@@ -107,6 +113,7 @@ $result = $conn->query($markaAdatok) or die($conn->error);
             <h1><?php echo $sum ?> darab</h1>
         </div>
     </div>
+
     <div class="row">
         <div class="full">
             <h1>Autók</h1>
@@ -133,6 +140,7 @@ $result = $conn->query($markaAdatok) or die($conn->error);
             </table>
         </div>
     </div>
+
     <div class="footer">
         <h2>ProjekMunka10</h2>
     </div>
