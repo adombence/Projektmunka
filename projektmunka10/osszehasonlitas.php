@@ -21,31 +21,6 @@ require('php/db.php');
         <a href="./osszehasonlitas.php" class="active">Összehasonlítás</a>
     </div>
     <div class="row">
-        <div class="side">
-            <h1>Legkevesebbet eladott autó</h1>
-            <?php
-            mysqli_free_result($result);
-            $legkevesebbetEladott = "SELECT * FROM `modell` ORDER BY eladottDarabszam LIMIT 1;";
-            $result = $conn->query($legkevesebbetEladott) or die($conn->error);
-            $rows = $result->fetch_assoc();
-            ?>
-            <h2><?php echo $rows['modellNev'] ?>:</h2>
-            <h2><?php echo $rows['eladottDarabszam'] ?> darab</h2>
-        </div>
-        <div class="main">
-            <h1>Legtöbbet eladott autó</h1>
-            <?php
-            mysqli_free_result($result);
-            $legtobbetEladott = "SELECT * FROM `modell` ORDER BY eladottDarabszam DESC LIMIT 1;";
-            $result = $conn->query($legtobbetEladott) or die($conn->error);
-            $rows = $result->fetch_assoc();
-            ?>
-            <h2><?php echo $rows['modellNev'] ?>:</h2>
-            <h2><?php echo $rows['eladottDarabszam'] ?> darab</h2>
-        </div>
-    </div>
-
-    <div class="row">
         <div class="full3">
             <h1>Gyártók alapítás szerint rendezve</h1>
             <table class="table4">
@@ -70,6 +45,33 @@ require('php/db.php');
                 ?>
             </table>
         </div>
+    </div>
+    <div class="row">
+        <div class="side">
+            <h1>Legkevesebbet eladott autó</h1>
+            <?php
+            mysqli_free_result($result);
+            $legkevesebbetEladott = "SELECT * FROM `modell` ORDER BY eladottDarabszam LIMIT 1;";
+            $result = $conn->query($legkevesebbetEladott) or die($conn->error);
+            $rows = $result->fetch_assoc();
+            ?>
+            <h2><?php echo $rows['modellNev'] ?>:</h2>
+            <h2><?php echo $rows['eladottDarabszam'] ?> darab</h2>
+        </div>
+        <div class="main3">
+            <h1>Legtöbbet eladott autó</h1>
+            <?php
+            mysqli_free_result($result);
+            $legtobbetEladott = "SELECT * FROM `modell` ORDER BY eladottDarabszam DESC LIMIT 1;";
+            $result = $conn->query($legtobbetEladott) or die($conn->error);
+            $rows = $result->fetch_assoc();
+            ?>
+            <h2><?php echo $rows['modellNev'] ?>:</h2>
+            <h2><?php echo $rows['eladottDarabszam'] ?> darab</h2>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="full">
             <h1>Autók évtized szerint rendezve</h1>
             <table class="table3">
