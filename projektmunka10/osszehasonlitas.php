@@ -8,7 +8,7 @@ require('php/db.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Összehasonlítások</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -47,27 +47,41 @@ require('php/db.php');
         </div>
     </div>
     <div class="row">
+        <div class="full">
+            <h1>Összes eladott autó</h1>
+            <?php
+            mysqli_free_result($result);
+            $eladasok = 'SELECT SUM(eladottDarabszam) FROM modell';
+            $result = $conn->query($eladasok) or die($conn->error);
+            $rows = $result->fetch_assoc();
+            $sum = $rows['SUM(eladottDarabszam)'];
+            ?>
+            <h1><?php echo $sum ?> darab</h1>
+
+        </div>
+    </div>
+    <div class="row">
         <div class="side">
             <h1>Legkevesebbet eladott autó</h1>
             <?php
             mysqli_free_result($result);
-            $legkevesebbetEladott = "SELECT * FROM `modell` ORDER BY eladottDarabszam LIMIT 1;";
+            $legkevesebbetEladott = "SELECT gyarto.gyartoNev, modell.modellNev, modell.eladottDarabszam FROM gyarto, modell WHERE gyarto.gyartoId = modell.gyartoId ORDER BY modell.eladottDarabszam LIMIT 1;";
             $result = $conn->query($legkevesebbetEladott) or die($conn->error);
             $rows = $result->fetch_assoc();
             ?>
-            <h2><?php echo $rows['modellNev'] ?>:</h2>
-            <h2><?php echo $rows['eladottDarabszam'] ?> darab</h2>
+            <h1><?php echo $rows['gyartoNev'] . ' ' . $rows['modellNev'] ?>:</h1>
+            <h1><?php echo $rows['eladottDarabszam'] ?> darab</h1>
         </div>
         <div class="main3">
             <h1>Legtöbbet eladott autó</h1>
             <?php
             mysqli_free_result($result);
-            $legtobbetEladott = "SELECT * FROM `modell` ORDER BY eladottDarabszam DESC LIMIT 1;";
+            $legtobbetEladott = "SELECT gyarto.gyartoNev, modell.modellNev, modell.eladottDarabszam FROM gyarto, modell WHERE gyarto.gyartoId = modell.gyartoId ORDER BY modell.eladottDarabszam DESC LIMIT 1;";
             $result = $conn->query($legtobbetEladott) or die($conn->error);
             $rows = $result->fetch_assoc();
             ?>
-            <h2><?php echo $rows['modellNev'] ?>:</h2>
-            <h2><?php echo $rows['eladottDarabszam'] ?> darab</h2>
+            <h1><?php echo $rows['gyartoNev'] . ' ' . $rows['modellNev'] ?>:</h1>
+            <h1><?php echo $rows['eladottDarabszam'] ?> darab</h1>
         </div>
     </div>
 
