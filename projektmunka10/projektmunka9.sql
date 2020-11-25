@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: mysql.omega:3306
--- Létrehozás ideje: 2020. Nov 23. 22:51
+-- Létrehozás ideje: 2020. Nov 25. 12:41
 -- Kiszolgáló verziója: 5.7.32-log
 -- PHP verzió: 5.6.40
 
@@ -96,7 +96,7 @@ INSERT INTO `modell` (`gyartoId`, `modellNev`, `gyartasiEv`, `eladottDarabszam`)
 (5, 'WagonR MP31S', 2010, 24395),
 (6, 'Accord 8 generation', 2008, 372789),
 (6, 'Civic 8 generation', 2005, 308415),
-(6, 'Jazz GD', 2001, 34),
+(6, 'Jazz GD', 2001, 3452),
 (6, 'City GM2/3', 2008, 83156),
 (6, 'Legend KA9', 1995, 65456),
 (7, 'Supra A80', 1993, 12059),
@@ -116,7 +116,7 @@ INSERT INTO `modell` (`gyartoId`, `modellNev`, `gyartasiEv`, `eladottDarabszam`)
 (9, 'Lacetti J300', 2008, 12145),
 (10, 'Qasqai J11', 2013, 226111),
 (10, 'Juke F16', 2019, 68773),
-(10, 'GT-R', 2007, 807),
+(10, 'GT-R', 2007, 8073),
 (10, 'Cube 3 generation', 2008, 2534),
 (10, 'Leaf ZE1', 2017, 5348);
 
