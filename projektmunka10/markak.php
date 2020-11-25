@@ -84,8 +84,8 @@ $result = $conn->query($markaAdatok) or die($conn->error);
             $result = $conn->query($legkevesebbetEladott) or die($conn->error);
             $rows = $result->fetch_assoc();
             ?>
-            <h3><?php echo $rows['modellNev'] ?>:</h3>
-            <h3><?php echo $rows['eladottDarabszam'] ?> darab</h3>
+            <h1><?php echo $rows['modellNev'] ?>:</h1>
+            <h1><?php echo $rows['eladottDarabszam'] ?> darab</h1>
         </div>
 
         <div class="main2">
@@ -96,8 +96,8 @@ $result = $conn->query($markaAdatok) or die($conn->error);
             $result = $conn->query($legtobbetEladott) or die($conn->error);
             $rows = $result->fetch_assoc();
             ?>
-            <h3><?php echo $rows['modellNev'] ?>:</h3>
-            <h3><?php echo $rows['eladottDarabszam'] ?> darab</h3>
+            <h1><?php echo $rows['modellNev'] ?>:</h1>
+            <h1><?php echo $rows['eladottDarabszam'] ?> darab</h1>
 
         </div>
     </div>
