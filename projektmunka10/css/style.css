@@ -3,8 +3,8 @@
 /*
  * Colors:
  *
- * primary dark: #2C2F33
- * secondary dark:  #23272A
+ * primary dark: #23272A
+ * secondary dark: #2C2F33
  * font color on dark: #ffffff
  * primary light: #f1f1f1
  * secondary light: #f5f5f5
@@ -198,6 +198,17 @@ a:hover {
 }
 
 .full2 {
+    height: 250px;
+    padding: 20px;
+}
+
+.full4 {
+    -ms-flex: 100%;
+    /* IE10 */
+    flex: 100%;
+    background-color: #f1f1f1;
+    color: black !important;
+    text-align: center;
     height: 250px;
     padding: 20px;
 }
