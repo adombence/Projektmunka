@@ -83,30 +83,6 @@ a:hover {
     border-bottom: 1.5px solid black;
 }
 
-.autok {
-    position: relative;
-    width: auto;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-row-gap: 25px;
-    grid-column-gap: 25px;
-    margin: 10px;
-}
-
-.auto {
-    width: auto;
-    height: 200px;
-    font-size: 50px !important;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    /*display: flex;*/
-    flex-direction: row;
-    align-items: center;
-    text-align: center !important;
-    justify-content: space-between;
-    border-radius: 10px;
-    background-color: #2C2F33;
-}
-
 .header {
     padding: 50px;
     text-align: center;
@@ -187,6 +163,11 @@ a:hover {
     text-align: center;
 }
 
+.full2 {
+    height: 250px;
+    padding: 20px;
+}
+
 .full2,
 .full3 {
     -ms-flex: 100%;
@@ -195,11 +176,6 @@ a:hover {
     background-color: #FF5252;
     color: black !important;
     text-align: center;
-}
-
-.full2 {
-    height: 250px;
-    padding: 20px;
 }
 
 .full4 {
