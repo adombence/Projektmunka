@@ -1,0 +1,11 @@
+(`nev`, `szuletes`, `halalozas`, `szarmazas`, `stilus`),
+('Munkácsy Mihály', 1844, 1900, 'magyar', 'romantika - realzimus - biedermeier - akadémikus'),
+('Barabás Miklós', 1810, 1898, 'magyar', 'biedermeier - klaszicizmus'),
+('Frida Kahlo', 1907, 1954, 'mexikó', 'szürrealizmus'),
+('Vincent van Gogh', 1853, 1890, 'holland', 'posztimpresszionizmus'),
+('Pablo Picasso', 1881, 1973, 'sapnyol', 'kubizmus'),
+('Claude Monet', 1840, 1926, 'francia','impresszionizmus'),
+('Thomas Eakins', 1844, 1916, 'usa', 'realizmus'),
+('Caspar David Friedrich', 1774, 1840, 'német', 'romantika'),
+('Francisco Goya', 1746, 1828, 'spanyol', 'romantika'),
+('Anders Zorn', 1860, 1920, 'svéd', 'impresszionizmus');
