@@ -2,7 +2,7 @@
     position: relative;
 
     display: flex;
-
+    padding-top: 1%;
     min-height: 20vh;
     align-items: center;
     justify-content: center;
