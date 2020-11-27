@@ -17,6 +17,16 @@ require('php/db.php');
     <button class="filter">szűrés</button>
     <div class="panel">
         <form action="POST">
+            <!--TODO
+                MUVESZ ALAPJAN: nev, szuletes, halalozas, szarmazas
+                FESTMENY ALAPJAN: cim, stílus, anyag, meret(x,y)
+                LOKACIO ALAPJAN: orszag, varos, kiallitohely-->
+                <input type="text" id="cim" class="cim">
+                <input type="text" id="stilus" class="stilus">
+                <input type="text" id="anyag" class="anyag">
+                <input type="range" id="meretx" class="meretx">
+                <input type="range" id="merety" class="merety">
+                
             <div class="full5">
                 <h1>Keletkezés éve</h1>
                 <div class="range-box">
