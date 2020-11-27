@@ -21,14 +21,14 @@ require('php/db.php');
                 MUVESZ ALAPJAN: nev, szuletes, halalozas, szarmazas
                 FESTMENY ALAPJAN: cim, stílus, anyag, meret(x,y)
                 LOKACIO ALAPJAN: orszag, varos, kiallitohely-->
-                <input type="text" id="cim" class="cim">
-                <input type="text" id="stilus" class="stilus">
-                <input type="text" id="anyag" class="anyag">
-                <input type="range" id="meretx" class="meretx">
-                <input type="range" id="merety" class="merety">
-                
+            <input type="text" id="cim" class="cim">
+            <input type="text" id="stilus" class="stilus">
+            <input type="text" id="anyag" class="anyag">
+            <input type="range" id="meretx" class="meretx">
+            <input type="range" id="merety" class="merety">
+
             <div class="full5">
-                <h1>Keletkezés éve</h1>
+                <p>Keletkezés éve</p>
                 <div class="range-box">
                     <div id='fullbar' class="range">
                         <div id='filteredbar' class='range__between'></div>
@@ -39,15 +39,41 @@ require('php/db.php');
                     </div>
                 </div>
             </div>
-
-
-
-
         </form>
     </div>
-
     <script src="js/filter.js"></script>
     <script src="js/range.js"></script>
+    <div class="row">
+        <div class="full">
+            <table class="table3">
+                <tr>
+                    <th>Művész</th>
+                    <th>cím</th>
+                    <th>keletkezés éve</th>
+                    <th>stílus</th>
+                    <th>magasság</th>
+                    <th>szélesség</th>
+                </tr>
+                <?php
+                mysqli_free_result($result);
+                $festmenyek = 'SELECT muvesz, cim, keletkezeseve, stilus, meretx, merety FROM `festmeny` ORDER BY `keletkezeseve`;';
+                $result = $conn->query($festmenyek) or die($conn->error);
+                while ($rows = $result->fetch_assoc()) {
+                ?>
+                    <tr>
+                        <td><?php echo $rows['muvesz'] ?></td>
+                        <td><?php echo $rows['cim'] ?></td>
+                        <td><?php echo $rows['keletkezeseve'] ?></td>
+                        <td><?php echo $rows['stilus'] ?></td>
+                        <td><?php echo $rows['meretx']?> cm</td>
+                        <td><?php echo $rows['merety']?> cm</td>
+                    </tr>
+                <?php
+                }
+                ?>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
