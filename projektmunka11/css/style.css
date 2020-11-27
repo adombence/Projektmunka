@@ -184,13 +184,13 @@ a:hover {
     flex: 100%;
 }
 
-.full5 h1,
+.full5 p,
 .full5 #inputmin,
 .full5 #inputmax {
     text-align: center;
 }
 
-.full5 h1{
+.full5 p{
     padding: 0;
     margin: 0;
 }
@@ -220,7 +220,7 @@ a:hover {
 .table4 {
     font-family: 'Roboto Mono';
     border-collapse: collapse;
-    font-size: 30px;
+    font-size: 20px;
     width: 100%;
 }
 
