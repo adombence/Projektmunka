@@ -1,99 +1,49 @@
-* {
-    padding: 0;
+#slider {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#slider .slides {
+    display: block;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
 }
 
-.container {
-    position: relative;
-}
-
-.slide-1 {
-    background: url('../static/the-meadow-of-san-isidro-on-his-feast-day-1788.jpg!halfhd.jpg');
-}
-
-.slide-2 {
-    background: url('../static/the-agnew-clinic-1889.jpg');
-}
-
-.slide-3 {
-    background: url('../static/the-starry-night.jpg!hd.jpg');
-}
-
-.slide-4 {
-    background: url('../static/the-stages-of-life.jpg!hd.jpg');
-}
-
-.slide-5 {
-    background: url('../static/christ-before-pilate-1881.jpg');
-}
-
-.slide-6 {
-    background: url('../static/castles-in-the-air-1885.jpg');
-}
-
-.slide-7 {
-    background: url('../static/impression-sunrise.jpg!hd.jpg');
-}
-
-.slide {
+#slider .slide {
+    float: center;
+    list-style-type: none;
     width: 100%;
-    height: 100vh;
-    background-size: 100%;
-    background-position: center;
-    position: relative;
-    overflow-x: hidden;
+    height: 100%;
 }
 
-.caption {
-    background: rgba(0, 0, 0, 0.03);
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 40px 0px;
+/* helper css, since we don't have images */
+.slide1 {
+    background: url(../static/castles-in-the-air-1885.jpg);
 }
 
-.caption h3 {
-    color: #fff;
-    text-align: center;
-    font-size: 50px;
-    padding: 18px;
+.slide2 {
+    background: url(../static/christ-before-pilate-1881.jpg)
 }
 
-.caption p {
-    max-width: 600px;
-    width: 90%;
-    margin: 0px auto;
-    color: #ccc;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.5em;
+.slide3 {
+    background: url(../static/impression-sunrise.jpg!hd.jpg);
 }
 
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 100;
-    background: rgba(0, 0, 0, .1);
-    border-radius: 50%;
-    transform: background 500ms;
+.slide4 {
+    background: url(../static/the-agnew-clinic-1889.jpg);
 }
 
-.arrow img {
-    width: 50px;
+.slide5 {
+    background: url(../static/the-meadow-of-san-isidro-on-his-feast-day-1788.jpg!halfhd.jpg);
 }
 
-.arrow:hover {
-    background: rgba(0, 0, 0, .4);
+.slide6 {
+    background: url(../static/the-stages-of-life.jpg!hd.jpg);
 }
 
-.l {
-    left: 0;
-}
-
-.r {
-    right: 0;
+.slide7 {
+    background: url(../static/the-starry-night.jpg!hd.jpg);
 }
