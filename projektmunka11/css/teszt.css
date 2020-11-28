@@ -2,8 +2,8 @@
     position: relative;
 
     display: flex;
-    padding-top: 1%;
-    min-height: 20vh;
+    padding: 0;
+    min-height: 15vh;
     align-items: center;
     justify-content: center;
 }
@@ -24,8 +24,8 @@
     width: 20px;
     height: 20px;
 
-    cursor: move;
-    transform: translateY(-23%);
+    cursor: pointer;
+    transform: translateY(-50%);
 
     border: none;
     border-radius: 50%;
@@ -34,8 +34,8 @@
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type=number] {
@@ -55,5 +55,4 @@ input[type=number] {
 .range_inpt2 {
     margin-top: 20px;
     width: 50px;
-
 }
