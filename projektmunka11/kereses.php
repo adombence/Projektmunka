@@ -24,8 +24,8 @@ require('php/db.php');
             <input type="text" id="cim" class="cim">
             <input type="text" id="stilus" class="stilus">
             <input type="text" id="anyag" class="anyag">
-            <input type="range" id="meretx" class="meretx">
-            <input type="range" id="merety" class="merety">
+            <input type="range" id="meretx" class="meretx" min='7' max='460'>
+            <input type="range" id="merety" class="merety" min='7' max='776'>
 
             <div class="full5">
                 <p>Keletkezés éve</p>
