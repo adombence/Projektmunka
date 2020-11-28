@@ -1,49 +1,27 @@
-#slider {
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-}
-
-#slider .slides {
-    display: block;
-    width: 100%;
-    height: 100%;
+body{
     margin: 0;
     padding: 0;
+    background-color: #FF3739;
 }
 
-#slider .slide {
-    float: center;
-    list-style-type: none;
+#main{
+    height: 100vh;
     width: 100%;
-    height: 100%;
+    position: absolute;
+    clip-path: polygon(0% 0%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 0% 100%);
+    background-color: aqua;
+    overflow: hidden;
+    transition: all .5s;
 }
 
-/* helper css, since we don't have images */
-.slide1 {
-    background: url(../static/castles-in-the-air-1885.jpg);
+#slider{
+    width: 700%;
+    position: relative;
+    left: 0;
 }
 
-.slide2 {
-    background: url(../static/christ-before-pilate-1881.jpg)
-}
-
-.slide3 {
-    background: url(../static/impression-sunrise.jpg!hd.jpg);
-}
-
-.slide4 {
-    background: url(../static/the-agnew-clinic-1889.jpg);
-}
-
-.slide5 {
-    background: url(../static/the-meadow-of-san-isidro-on-his-feast-day-1788.jpg!halfhd.jpg);
-}
-
-.slide6 {
-    background: url(../static/the-stages-of-life.jpg!hd.jpg);
-}
-
-.slide7 {
-    background: url(../static/the-starry-night.jpg!hd.jpg);
+#slider img{
+    width: 14.2857;
+    float: left;
 }
