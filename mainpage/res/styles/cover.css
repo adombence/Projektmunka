@@ -48,9 +48,9 @@ body {
 /*
  * Header
  */
-.masthead {
-  margin-bottom: auto;
-}
+ .masthead{
+   margin-bottom: 0px !important;
+ }
 
 .masthead-brand {
   margin-bottom: 0;
