@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto Mono");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+    /*font-size: 30px;*/
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background: url(../static/the-agnew-clinic-1889.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
+.container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cover {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-top: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.btn {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.btn-text {
+    cursor: pointer;
+    padding: 0;
+    font-weight: 700;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+a,
+a:focus,
+a:hover {
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
