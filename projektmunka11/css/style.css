@@ -283,6 +283,7 @@ a:hover {
     color: black;
     display: none;
     overflow: hidden;
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {
