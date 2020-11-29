@@ -55,7 +55,7 @@ body {
 .btn {
     font-size: 1.25rem;
     font-weight: 300;
-    margin-top: 0;
+    margin-top: 510px;
     margin-bottom: 1rem;
     box-sizing: border-box;
 }
@@ -64,10 +64,10 @@ body {
     cursor: pointer;
     padding: 0;
     font-weight: 700;
-    background-color: #f1f1f1;
+    background-color: #ff9e80;
+    color: #000000;
     border-radius: 3px;
     padding: 5px;
-
 }
 
 a,
