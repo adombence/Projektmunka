@@ -3,7 +3,6 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0 -16px;
 }
 
 .col-50 {
@@ -50,7 +49,9 @@ label {
     background-color: #dddddd;
 }
 
-.panel label {
+.panel .range_inpt1,
+.panel .range_inpt2,
+.panel .lab {
     text-align: center;
 }
 
