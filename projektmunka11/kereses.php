@@ -8,8 +8,9 @@ require('php/db.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>keresés</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -19,22 +20,22 @@ require('php/db.php');
         <div class="rowkeres">
             <div class="col-50">
                 <label for="muvesz" class="lab">Művész</label>
-                <div class="autocomplete">
-                    <input type="text" id="muvesz" name="muvesz" placeholder="Művész neve">
-                </div>
+                <input type="text" id="muvesz" name="muvesz" placeholder="Művész neve">
                 <label for="magassag" class="lab">Magasság</label>
                 <input type="text" id="magassag" class="magassag" placeholder="magasság">
-
+                <label for="stilus" class="lab">stílus</label>
+                <input type="stilus" id="stilus" class="stilus" placeholder="stílus">
             </div>
             <div class="col-50">
                 <label for="cim" class="lab">Cím</label>
                 <input type="text" id="cim" name="cim" placeholder="Cím">
                 <label for="szélesség" class="lab">Szélesség</label>
                 <input type="text" id="szelesseg" class="szelesseg" placeholder="szélesség">
+                <label for="anyag" class="lab">anyag</label>
+                <input type="text" id="anyag" class="anyag" placeholder="anyag">
             </div>
         </div>
-        <label for="stilus">stílus</label>
-        <input type="stilus" id="stilus" class="stilus" placeholder="stílus">
+
         <label for="keletkezeseve">Keletkezés éve</label>
         <div class="range-box">
             <div id='fullbar' class="range">
@@ -46,41 +47,53 @@ require('php/db.php');
             </div>
         </div>
         <label>
-            <input type="submit" value="keresés" class="btn">
+            <input type="submit" value="keresés" class="btn" id="btn">
         </label>
     </div>
     <script src="js/filter.js"></script>
     <script src="js/range.js"></script>
-    <div class="row">
-        <div class="full">
-            <table class="table3">
-                <tr>
-                    <th>Művész</th>
-                    <th>cím</th>
-                    <th>éve</th>
-                    <th>stílus</th>
-                    <th>magasság</th>
-                    <th>szélesség</th>
-                </tr>
-                <?php
-                mysqli_free_result($result);
-                $festmenyek = 'SELECT muvesz, cim, keletkezeseve, stilus, meretx, merety FROM `festmeny` ORDER BY `keletkezeseve`;';
-                $result = $conn->query($festmenyek) or die($conn->error);
-                while ($rows = $result->fetch_assoc()) {
-                ?>
-                    <tr>
-                        <td><?php echo $rows['muvesz'] ?></td>
-                        <td><?php echo $rows['cim'] ?></td>
-                        <td><?php echo $rows['keletkezeseve'] ?></td>
-                        <td><?php echo $rows['stilus'] ?></td>
-                        <td><?php echo $rows['meretx'] ?> cm</td>
-                        <td><?php echo $rows['merety'] ?> cm</td>
-                    </tr>
-                <?php
+    <div class="row"">
+        <div class=" full" id="full">
+        <script>
+            $(document).ready(function() {
+                load_data();
+
+                function load_data(muvesz, cim, min, max, stilus, anyag, meretx, merety) {
+                    $.ajax({
+                        url: "fetch.php",
+                        method: "post",
+                        data: {
+                            muvesz: muvesz,
+                            cim: cim,
+                            min: min,
+                            max: max,
+                            stilus: stilus,
+                            anyag: anyag,
+                            meretx: meretx,
+                            merety: merety
+                        },
+                        success: function(data) {
+                            $('#full').html(data);
+                        }
+                    });
                 }
-                ?>
-            </table>
-        </div>
+
+                $('#btn').click(function() {
+                    var muvesz, cim, min, max, stilus, anyag, meretx, merety;
+                    muvesz = document.getElementById('muvesz').value;
+                    cim = document.getElementById('cim').value;
+                    min = document.getElementById('inputmin').value;
+                    max = document.getElementById('inputmax').value;
+                    stilus = document.getElementById('stilus').value;
+                    anyag = document.getElementById('anyag').value;
+                    meretx = document.getElementById('magassag').value;
+                    merety = document.getElementById('szelesseg').value;
+                    console.log("muvesz: " + muvesz + "\ncim: " + cim + "\nmin: " + min + "\nmax" + max + "\nstilus:" + stilus + "\nanyag: " + anyag + "\nmeretx: " + meretx + "\nmerety: " + merety);
+                        load_data(muvesz, cim, min, max, stilus, anyag, meretx, merety);
+                });
+            });
+        </script>
+    </div>
     </div>
 </body>
 
