@@ -21,16 +21,16 @@ require('php/db.php');
             <div class="col-50">
                 <label for="muvesz" class="lab">Művész</label>
                 <input type="text" id="muvesz" name="muvesz" placeholder="Művész neve">
-                <label for="magassag" class="lab">Magasság</label>
-                <input type="text" id="magassag" class="magassag" placeholder="magasság">
+                <label for="magassag" class="lab">max. magasság</label>
+                <input type="text" id="magassag" class="magassag" placeholder="max. magasság">
                 <label for="stilus" class="lab">stílus</label>
                 <input type="stilus" id="stilus" class="stilus" placeholder="stílus">
             </div>
             <div class="col-50">
                 <label for="cim" class="lab">Cím</label>
                 <input type="text" id="cim" name="cim" placeholder="Cím">
-                <label for="szélesség" class="lab">Szélesség</label>
-                <input type="text" id="szelesseg" class="szelesseg" placeholder="szélesség">
+                <label for="szélesség" class="lab">max. szélesség</label>
+                <input type="text" id="szelesseg" class="szelesseg" placeholder="max. szélesség">
                 <label for="anyag" class="lab">anyag</label>
                 <input type="text" id="anyag" class="anyag" placeholder="anyag">
             </div>
