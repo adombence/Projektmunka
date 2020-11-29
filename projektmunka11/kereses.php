@@ -11,12 +11,45 @@ require('php/db.php');
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/teszt.css">
+    <link rel="stylesheet" href="css/keres.css">
 </head>
 
 <body>
     <button class="filter">szűrés</button>
     <div class="panel">
         <!--TODO-->
+        <div class="rowkeres">
+            <div class="col-50">
+                <label for="muvesz">Művész</label>
+                <div class="autocomplete">
+                    <input type="text" id="muvesz" name="muvesz" placeholder="Művész neve">
+                </div>
+                <label for="magassag">Magasság</label>
+                <input type="text" id="magassag" class="magassag" placeholder="magasság">
+
+            </div>
+            <div class="col-50">
+                <label for="cim">Cím</label>
+                <input type="text" id="cim" name="cim" placeholder="Cím">
+                <label for="szélesség">Szélesség</label>
+                <input type="text" id="szelesseg" class="szelesseg" placeholder="szélesség">
+            </div>
+        </div>
+        <label for="stilus">stílus</label>
+        <input type="stilus" id="stilus" class="stilus" placeholder="stílus">
+        <label for="keletkezeseve">Keletkezés éve</label>
+        <div class="range-box">
+            <div id='fullbar' class="range">
+                <div id='filteredbar' class='range__between'></div>
+                <button id='min' class="range__button_1"></button>
+                <button id='max' class="range__button_2"></button>
+                <input id='inputmin' class='range_inpt1' type='number' min='1800' max='1999' value="1800">
+                - <input id='inputmax' class='range_inpt2' type='number' min='1800' max='1999' value="1999">
+            </div>
+        </div>
+        <label>
+            <input type="submit" value="keresés" class="btn">
+        </label>
     </div>
     <script src="js/filter.js"></script>
     <script src="js/range.js"></script>
