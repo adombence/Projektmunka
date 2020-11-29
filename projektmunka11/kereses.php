@@ -10,8 +10,6 @@ require('php/db.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/teszt.css">
-    <link rel="stylesheet" href="css/keres.css">
 </head>
 
 <body>
@@ -20,18 +18,18 @@ require('php/db.php');
         <!--TODO-->
         <div class="rowkeres">
             <div class="col-50">
-                <label for="muvesz">Művész</label>
+                <label for="muvesz" class="lab">Művész</label>
                 <div class="autocomplete">
                     <input type="text" id="muvesz" name="muvesz" placeholder="Művész neve">
                 </div>
-                <label for="magassag">Magasság</label>
+                <label for="magassag" class="lab">Magasság</label>
                 <input type="text" id="magassag" class="magassag" placeholder="magasság">
 
             </div>
             <div class="col-50">
-                <label for="cim">Cím</label>
+                <label for="cim" class="lab">Cím</label>
                 <input type="text" id="cim" name="cim" placeholder="Cím">
-                <label for="szélesség">Szélesség</label>
+                <label for="szélesség" class="lab">Szélesség</label>
                 <input type="text" id="szelesseg" class="szelesseg" placeholder="szélesség">
             </div>
         </div>
