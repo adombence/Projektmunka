@@ -55,7 +55,7 @@ body {
 .btn {
     font-size: 1.25rem;
     font-weight: 300;
-    margin-top: 510px;
+    /*margin-top: 510px;*/
     margin-bottom: 1rem;
     box-sizing: border-box;
 }
