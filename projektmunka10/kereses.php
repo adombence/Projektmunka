@@ -23,17 +23,17 @@
                     <label for="gyarto" class="lab">Gyártó</label>
                     <input type="text" id="gyarto" name="gyarto" placeholder="Gyártó">
                     <label for="orszag" class="lab">Ország</label>
-                    <input type="text" id="orszag" class="orszag" placeholder="Ország">
+                    <input type="text" id="orszag" name="orszag" placeholder="Ország">
                     <label for="min" class="lab">Min. eladott darabszám</label>
-                    <input type="number" id="min" class="min" placeholder="2022" value="2022">
+                    <input type="number" id="min" name="min" placeholder="2022" value="2022">
                 </div>
                 <div class="col-50">
                     <label for="modell" class="lab">modell</label>
-                    <input type="text" id="modell" class="modell" placeholder="Modell név">
+                    <input type="text" id="modell" name="modell" placeholder="Modell név">
                     <label for="varos" class="lab">város</label>
-                    <input type="text" id="varos" class="varos" placeholder="Város">
+                    <input type="text" id="varos" name="varos" placeholder="Város">
                     <label for="max" class="lab">Max. eladott darabszám</label>
-                    <input type="number" id="max" class="max" placeholder="2168491" value="2168491">
+                    <input type="number" id="max" name="max" placeholder="2168491" value="2168491">
                 </div>
             </div>
             <label>
