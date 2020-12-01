@@ -29,6 +29,7 @@ $result = $conn->query($markaAdatok) or die($conn->error);
     <div class="nav">
         <a href="./index.html">Főoldal</a>
         <a href="./osszehasonlitas.php" class="ossszehasonlitas">Összehasonlítás</a>
+        <a href="./kereses.php">Keresés</a>
     </div>
     <div class="row">
         <div class="side">
