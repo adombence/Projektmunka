@@ -34,6 +34,7 @@ require('php/db.php');
                 mysqli_free_result($result);
                 $gyartok = "SELECT `gyartoNev`,`alapito`,`alapitasEve` FROM `gyarto` ORDER BY alapitasEve";
                 $result = $conn->query($gyartok) or die($conn->error);
+                echo $result;
                 while ($rows = $result->fetch_assoc()) {
                 ?>
                     <tr>
