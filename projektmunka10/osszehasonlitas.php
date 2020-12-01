@@ -19,6 +19,7 @@ require('php/db.php');
     <div class="nav">
         <a href="./index.html">Főoldal</a>
         <a href="./osszehasonlitas.php" class="active">Összehasonlítás</a>
+        <a href="./kereses.php">Keresés</a>
     </div>
     <div class="row">
         <div class="full3">
