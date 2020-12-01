@@ -102,5 +102,5 @@ if (mysqli_num_rows($result) > 0) {
 
     echo $output;
 } else {
-    echo 'Data Not Found';
+    echo 'Nincs ilyen adat';
 }
