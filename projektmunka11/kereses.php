@@ -52,48 +52,48 @@ require('php/db.php');
     </div>
     <script src="js/filter.js"></script>
     <script src="js/range.js"></script>
-    <div class="row"">
+    <div class="row">
         <div class=" full" id="full">
-        <script>
-            $(document).ready(function() {
-                load_data();
+            <script>
+                $(document).ready(function() {
+                    load_data();
 
-                function load_data(muvesz, cim, min, max, stilus, anyag, meretx, merety) {
-                    $.ajax({
-                        url: "fetch.php",
-                        method: "post",
-                        data: {
-                            muvesz: muvesz,
-                            cim: cim,
-                            min: min,
-                            max: max,
-                            stilus: stilus,
-                            anyag: anyag,
-                            meretx: meretx,
-                            merety: merety
-                        },
-                        success: function(data) {
-                            $('#full').html(data);
-                        }
-                    });
-                }
+                    function load_data(muvesz, cim, min, max, stilus, anyag, meretx, merety) {
+                        $.ajax({
+                            url: "fetch.php",
+                            method: "post",
+                            data: {
+                                muvesz: muvesz,
+                                cim: cim,
+                                min: min,
+                                max: max,
+                                stilus: stilus,
+                                anyag: anyag,
+                                meretx: meretx,
+                                merety: merety
+                            },
+                            success: function(data) {
+                                $('#full').html(data);
+                            }
+                        });
+                    }
 
-                $('#btn').click(function() {
-                    var muvesz, cim, min, max, stilus, anyag, meretx, merety;
-                    muvesz = document.getElementById('muvesz').value;
-                    cim = document.getElementById('cim').value;
-                    min = document.getElementById('inputmin').value;
-                    max = document.getElementById('inputmax').value;
-                    stilus = document.getElementById('stilus').value;
-                    anyag = document.getElementById('anyag').value;
-                    meretx = document.getElementById('magassag').value;
-                    merety = document.getElementById('szelesseg').value;
-                    console.log("muvesz: " + muvesz + "\ncim: " + cim + "\nmin: " + min + "\nmax" + max + "\nstilus:" + stilus + "\nanyag: " + anyag + "\nmeretx: " + meretx + "\nmerety: " + merety);
+                    $('#btn').click(function() {
+                        var muvesz, cim, min, max, stilus, anyag, meretx, merety;
+                        muvesz = document.getElementById('muvesz').value;
+                        cim = document.getElementById('cim').value;
+                        min = document.getElementById('inputmin').value;
+                        max = document.getElementById('inputmax').value;
+                        stilus = document.getElementById('stilus').value;
+                        anyag = document.getElementById('anyag').value;
+                        meretx = document.getElementById('magassag').value;
+                        merety = document.getElementById('szelesseg').value;
+                        console.log("muvesz: " + muvesz + "\ncim: " + cim + "\nmin: " + min + "\nmax" + max + "\nstilus:" + stilus + "\nanyag: " + anyag + "\nmeretx: " + meretx + "\nmerety: " + merety);
                         load_data(muvesz, cim, min, max, stilus, anyag, meretx, merety);
+                    });
                 });
-            });
-        </script>
-    </div>
+            </script>
+        </div>
     </div>
 </body>
 
