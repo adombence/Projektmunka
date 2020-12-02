@@ -4,7 +4,7 @@ $username = "";
 $password = "";
 
 // kapcsolat létrehozása
-$conn = mysqli_connect($servername, $username, $password, 'projektmunka10');
+$conn = mysqli_connect($servername, $username, $password, '');
 
 
 if (isset($_POST["muvesz"])) {
