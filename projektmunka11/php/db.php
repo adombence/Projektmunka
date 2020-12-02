@@ -1,10 +1,10 @@
 <?php
-$servername = "mysql.omega:3306";
-$username = "projektmunka10";
-$password = "nnmbbUv7Qibi3DS_";
+$servername = "";
+$username = "";
+$password = "";
 
 // kapcsolat létrehozása
-$conn = mysqli_connect($servername, $username, $password, 'projektmunka10');
+$conn = mysqli_connect($servername, $username, $password, '');
 
 // kapcsolat ellenőrzése
 if (!$conn) {
