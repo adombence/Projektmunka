@@ -26,6 +26,8 @@
                     <input type="text" id="orszag" name="orszag" placeholder="Ország">
                     <label for="min" class="lab">Min. eladott darabszám</label>
                     <input type="number" id="min" name="min" placeholder="2022" value="2022">
+                    <label for="minev" class="lab">Min. év</label>
+                    <input type="number" id="minev" name="minev" placeholder="1970" value="1970">
                 </div>
                 <div class="col-50">
                     <label for="modell" class="lab">modell</label>
@@ -34,6 +36,8 @@
                     <input type="text" id="varos" name="varos" placeholder="Város">
                     <label for="max" class="lab">Max. eladott darabszám</label>
                     <input type="number" id="max" name="max" placeholder="2168491" value="2168491">
+                    <label for="maxev" class="lab">max. év</label>
+                    <input type="number" id="maxev" name="maxev" placeholder="2019" value="2019">
                 </div>
             </div>
             <label>
@@ -99,12 +103,27 @@
                 } else {
                     $eladottDarabszam = "eladottDarabszam BETWEEN 2022 AND 2168491 AND";
                 }
+                if (isset($_POST["minev"])) {
+                    $minev = $_POST["minev"];
+                }
+                if (isset($_POST["maxev"])) {
+                    $maxev = $_POST["maxev"];
+                }
+                if (!empty($minev) && !empty($maxev)) {
+                    if ($minev == $maxev) {
+                        $gyartasiEv = "gyartasiEv = '{$minev}' AND";
+                    } else {
+                        $gyartasiEv = "gyartasiEv BETWEEN '{$minev}' AND '{$maxev}' AND";
+                    }
+                } else {
+                    $gyartasiEv = "gyartasiEv BETWEEN 1970 AND 2019 AND";
+                }
 
-                $where = $gyartoQ . ' ' . $modellQ . ' ' . $keletkezeseve . ' ' . $orszagQ . ' ' . $varosQ . ' ' . $eladottDarabszam . ' gyarto.gyartoId = modell.gyartoId AND gyarto.gyartoId = szekhely.gyartoId';
+                $where = $gyartoQ . ' ' . $modellQ . ' ' . $keletkezeseve . ' ' . $orszagQ . ' ' . $varosQ . ' ' . $eladottDarabszam . ' ' . $gyartasiEv . ' gyarto.gyartoId = modell.gyartoId AND gyarto.gyartoId = szekhely.gyartoId';
 
                 $sql = "SELECT * FROM gyarto, szekhely, modell WHERE " . $where;
 
-                echo $sql;
+                //echo $sql;
             } else {
                 $sql = "SELECT * FROM gyarto, szekhely, modell WHERE gyarto.gyartoId = modell.gyartoId AND gyarto.gyartoId = szekhely.gyartoId ";
             }
@@ -136,7 +155,7 @@
 
                 echo $output;
             } else {
-                echo 'Nincs ilyen adat';
+                echo ' ';
             }
             ?>
         </div>
