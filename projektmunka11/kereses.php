@@ -21,31 +21,35 @@ require('php/db.php');
             <div class="col-50">
                 <label for="muvesz" class="lab">Művész</label>
                 <input type="text" id="muvesz" name="muvesz" placeholder="Művész neve">
-                <label for="magassag" class="lab">max. magasság</label>
-                <input type="text" id="magassag" class="magassag" placeholder="max. magasság">
-                <label for="stilus" class="lab">stílus</label>
-                <input type="stilus" id="stilus" class="stilus" placeholder="stílus">
+                <label for="magassag" class="lab">Max. magasság</label>
+                <input type="text" id="magassag" class="magassag" placeholder="Max. magasság">
+                <label for="stilus" class="lab">Stílus</label>
+                <input type="stilus" id="stilus" class="stilus" placeholder="Stílus">
+
             </div>
             <div class="col-50">
                 <label for="cim" class="lab">Cím</label>
                 <input type="text" id="cim" name="cim" placeholder="Cím">
-                <label for="szélesség" class="lab">max. szélesség</label>
-                <input type="text" id="szelesseg" class="szelesseg" placeholder="max. szélesség">
-                <label for="anyag" class="lab">anyag</label>
-                <input type="text" id="anyag" class="anyag" placeholder="anyag">
+                <label for="szélesség" class="lab">Max. szélesség</label>
+                <input type="text" id="szelesseg" class="szelesseg" placeholder="Max. szélesség">
+                <label for="anyag" class="lab">Anyag</label>
+                <input type="text" id="anyag" class="anyag" placeholder="Anyag">
             </div>
         </div>
-
-        <label for="keletkezeseve">Keletkezés éve</label>
+        <label for="keletkezeseve" class="lab">Keletkezés éve</label>
         <div class="range-box">
             <div id='fullbar' class="range">
                 <div id='filteredbar' class='range__between'></div>
                 <button id='min' class="range__button_1"></button>
                 <button id='max' class="range__button_2"></button>
-                <input id='inputmin' class='range_inpt1' type='number' min='1800' max='1999' value="1800">
-                - <input id='inputmax' class='range_inpt2' type='number' min='1800' max='1999' value="1999">
+                <div class="center">
+                    <input id='inputmin' class='range_inpt1' type='number' min='1800' max='1999' value="1800">
+                    - <input id='inputmax' class='range_inpt2' type='number' min='1800' max='1999' value="1999">
+                </div>
             </div>
         </div>
+
+
         <label>
             <input type="submit" value="keresés" class="btn" id="btn">
         </label>
@@ -70,7 +74,7 @@ require('php/db.php');
                                 stilus: stilus,
                                 anyag: anyag,
                                 meretx: meretx,
-                                merety: merety
+                                merety: merety,
                             },
                             success: function(data) {
                                 $('#full').html(data);
