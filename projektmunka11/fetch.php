@@ -66,7 +66,7 @@ $output = '';
 if (!empty($where)) {
     //$where = mysqli_real_escape_string($conn, $where);
     $query = "SELECT muvesz, cim, keletkezeseve, stilus, anyag, meretx, merety FROM `festmeny` WHERE " .  $where . "ORDER BY keletkezeseve";
-    echo $query;
+    //echo $query;
 } else {
     $query = "SELECT muvesz, cim, keletkezeseve, stilus, anyag, meretx, merety FROM `festmeny` ORDER BY keletkezeseve;
     ";
