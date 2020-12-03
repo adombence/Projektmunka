@@ -50,12 +50,12 @@
         <div class="full">
             <?php
             if ($_SERVER['REQUEST_METHOD'] == "POST") {
-                $servername = "mysql.omega:3306";
-                $username = "projektmunka9";
-                $password = "VAcSZf8QT3sqz7A";
+                $servername = "";
+                $username = "";
+                $password = "";
 
                 // kapcsolat létrehozása
-                $conn = mysqli_connect($servername, $username, $password, 'projektmunka9');
+                $conn = mysqli_connect($servername, $username, $password, '');
 
                 // kapcsolat ellenőrzése
                 if (!$conn) {
