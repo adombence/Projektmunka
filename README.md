@@ -1,7 +1,7 @@
 # Projektmunka
 Projektmunka nevű tárgy forráskódjai
 
-# projektMuna2
+# projektMunka2
 Készítse el a Moziműsor  feladat eredményei alapján az alábbi weblapot:
 * Jelenítse meg az egyes lekérdezések eredményét!
 * A különböző lekérdezések és eredményeik külön weblapon jelenjenek meg!
